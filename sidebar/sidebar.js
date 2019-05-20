@@ -3,13 +3,21 @@
 class SideBar {
   constructor(menu) {
     this.menu = menu;
+    this.logo = document.querySelector(".logo");
+
+    window.addEventListener('load', () => {
+      TweenMax.from(this.logo, 1, { ease: Elastic.easeIn, x: -200  });
+    });
+
     this.sideMenu = document.querySelector(".side-bar");
     this.sideMenuIcon = document.querySelector(".sidemenu-bar");
-    this.logo = document.querySelector(".logo");
+    
 
     this.menu.addEventListener("click", () => {
       this.toggleMenu();
     });
+
+   
     this.isOpen = false;
   }
 
