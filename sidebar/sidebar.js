@@ -3,7 +3,7 @@
 class SideBar {
     constructor(menu) {
         this.menu = menu;
-        this.sideMenu = document.querySelector('')
+        this.sideMenu = document.querySelector('side-bar');
         this.menu.addEventListener('click', () => {
             this.toggleMenu();
         })
