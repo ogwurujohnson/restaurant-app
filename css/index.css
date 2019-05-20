@@ -164,7 +164,7 @@ p {
   padding: 2.5rem;
 }
 .main-header i {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .side-bar {
   z-index: 500;
@@ -175,10 +175,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
 }
 .side-bar .nav-menu {
-  margin-left: 10px;
+  margin-left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -187,18 +186,18 @@ p {
 .side-bar .nav-menu .link {
   text-decoration: none;
   color: black;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 64px;
   margin-bottom: 0;
   color: white;
 }
 .side-bar .login-button {
-  margin-left: 20px;
-  margin-top: 30px;
+  margin-left: 3rem;
+  margin-top: 3rem;
   border: 1px solid white;
-  width: 60%;
+  width: 70%;
   height: 8%;
   background: transparent;
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
 }

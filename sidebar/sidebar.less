@@ -5,7 +5,7 @@
     padding: @medium-padding;
 
     i {
-        font-size: @small-font;
+        font-size: @medium-font;
     }
 }
 
@@ -17,10 +17,9 @@
     height: 100%;
     .flex-mixin(column);
     justify-content: center;
-    border: 1px solid black;
 
     .nav-menu {
-        margin-left: 10px;
+        margin-left: @large-margin;
         .flex-mixin(column);
         justify-content: space-evenly;
         height: 50%;
@@ -28,7 +27,7 @@
         .link {
             text-decoration: none;
             color: black;
-            font-size: 32px;
+            font-size: @large-font;
             font-weight: 64px;
             margin-bottom: 0;
             color: white;
@@ -37,13 +36,13 @@
     }
 
     .login-button {
-        margin-left: 20px;
-        margin-top: 30px;
+        margin-left: @large-margin;
+        margin-top: @large-margin;
         border: 1px solid white;
-        width: 60%;
+        width: 70%;
         height: 8%;
         background: transparent;
-        font-size: 20px;
+        font-size: @medium-font;
         color: white;
     }
 }

@@ -9,22 +9,25 @@ class SideBar {
 
         this.menu.addEventListener('click', () => {
             this.toggleMenu();
-        })
+        });
         this.isOpen = false;
     }
 
     toggleMenu() {
         this.isOpen = !this.isOpen;
         if(this.isOpen) {
-            this.sideMenu.style.width = "100%";
-            this.sideMenuIcon.style.color = "white";
-            this.sideMenuIcon.classList.replace('fa-bars', 'fa-times');
-            this.logo.style.color = "white";
+            TweenMax.to(this.sideMenu, 1, {width: "100%", onComplete:() => {
+                this.sideMenuIcon.style.color = "white";
+                this.sideMenuIcon.classList.replace('fa-bars', 'fa-times');
+                this.logo.style.color = "white";
+            }});
         } else {
-            this.sideMenuIcon.style.color = "black";
-            this.sideMenuIcon.classList.replace('fa-times', 'fa-bars');
-            this.sideMenu.style.width = "0%";
-            this.logo.style.color = "black";
+            TweenMax.to(this.sideMenu, 1, {width: "0%", onComplete:() => {
+                this.sideMenuIcon.style.color = "black";
+                this.sideMenuIcon.classList.replace('fa-times', 'fa-bars');
+                this.logo.style.color = "black";
+            }});
+            
         }
         
     }
