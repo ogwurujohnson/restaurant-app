@@ -6,7 +6,7 @@ class SideBar {
     this.logo = document.querySelector(".logo");
 
     window.addEventListener('load', () => {
-      TweenMax.from(this.logo, 1, { ease: Elastic.easeIn, x: -200  });
+      TweenMax.from(this.logo, 1, { ease: Circ.easeIn, x: -200  });
     });
 
     this.sideMenu = document.querySelector(".side-bar");
