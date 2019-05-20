@@ -3,7 +3,8 @@
 class SideBar {
     constructor(menu) {
         this.menu = menu;
-        this.sideMenu = document.querySelector('side-bar');
+        this.sideMenu = document.querySelector('.side-bar');
+        
         this.menu.addEventListener('click', () => {
             this.toggleMenu();
         })
@@ -12,7 +13,12 @@ class SideBar {
 
     toggleMenu() {
         this.isOpen = !this.isOpen;
-        console.log(this.isOpen);
+        if(this.isOpen) {
+            this.sideMenu.style.width = "100%";
+        } else {
+            this.sideMenu.style.width = "0%";
+        }
+        
     }
 }
 
