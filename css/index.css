@@ -167,4 +167,34 @@ p {
 }
 .side-bar {
   position: fixed;
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+.side-bar .nav-menu {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.side-bar .nav-menu .link {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 64px;
+  margin-bottom: 0;
+}
+.side-bar .login-button {
+  margin-left: 20px;
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 60%;
+  height: 8%;
+  background: transparent;
+  font-size: 20px;
 }
