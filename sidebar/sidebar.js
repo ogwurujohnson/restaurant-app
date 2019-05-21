@@ -32,7 +32,7 @@ class SideBar {
           this.sideMenuIcon.classList.replace("fa-bars", "fa-times");
           this.logo.style.color = "white";
           this.mainHeader.style.backgroundColor = "black";
-        }
+        }, opacity: 100
       });
     } else {
       TweenMax.to(this.sideMenu, 1, {
@@ -42,7 +42,7 @@ class SideBar {
           this.sideMenuIcon.classList.replace("fa-times", "fa-bars");
           this.logo.style.color = "white";
           this.mainHeader.style.backgroundColor = "#6200EE";
-        }
+        }, opacity: 0
       });
     }
   }
