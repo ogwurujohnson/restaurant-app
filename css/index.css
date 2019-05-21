@@ -396,19 +396,24 @@ p {
   flex-direction: column;
 }
 .how-to .how-to-grid .step {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
   height: 300px;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 .how-to .how-to-grid .step .img {
   width: 100%;
+  height: 50%;
 }
 .how-to .how-to-grid .step .img img {
   width: 100%;
+  height: 100%;
 }
 .how-to .how-to-grid .step h2 {
   font-size: 2rem;
