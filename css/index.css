@@ -435,24 +435,27 @@ body {
 .footer-section .social-section .social {
   border: 2px solid black;
   border-radius: 50%;
+  margin: 0.5rem;
   width: 100%;
   text-align: center;
 }
 .footer-section .social-section .social img {
-  width: 95%;
+  width: 100%;
   padding: 2rem;
+}
+.footer-section .get-app {
+  background-color: #6200EE;
 }
 .footer-section .get-app h1 {
   text-align: center;
   font-size: 2rem;
-  font-weight: 20px;
-  padding: 1rem;
+  padding-top: 3rem;
+  color: white;
 }
 .footer-section .get-app .stores {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #6200EE;
 }
 .footer-section .get-app .stores img {
   width: 20%;
