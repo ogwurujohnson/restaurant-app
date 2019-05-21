@@ -272,7 +272,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 3rem 1rem;
+  margin: 3rem 2rem;
 }
 .interests .interest-grid .interest {
   display: flex;
@@ -423,7 +423,37 @@ body {
   text-align: center;
 }
 .footer-section {
-  border: 1px solid black;
   flex-shrink: 0;
-  padding: 20px;
+  padding-top: 3rem;
+}
+.footer-section .social-section {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  width: 80%;
+}
+.footer-section .social-section .social {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100%;
+  text-align: center;
+}
+.footer-section .social-section .social img {
+  width: 95%;
+  padding: 2rem;
+}
+.footer-section .get-app h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 20px;
+  padding: 1rem;
+}
+.footer-section .get-app .stores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #6200EE;
+}
+.footer-section .get-app .stores img {
+  width: 20%;
 }

@@ -1,5 +1,39 @@
 .footer-section {
-    border: 1px solid black;
     flex-shrink: 0;
-    padding: 20px;
+    padding-top: 3.0rem;
+    
+    .social-section {
+        .flex-mixin(row);
+        margin: 3.0rem auto;
+        width: 80%;
+        .social {
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 100%;
+            text-align: center;
+            img {
+                width: 95%;
+                padding: 2.0rem;
+            }
+        }
+    }
+
+    .get-app {
+
+        h1 {
+            text-align: center;
+            font-size: 2.0rem;
+            font-weight: 20px;
+            padding: 1.0rem;
+        }
+
+        .stores {
+            .flex-mixin(row);
+            justify-content: space-evenly;
+            background-color: #6200EE;
+            img {
+                width: 20%;
+            }
+        }
+    }
 }
