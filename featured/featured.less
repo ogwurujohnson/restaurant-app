@@ -3,6 +3,8 @@
     position: relative;
     margin: 1.0rem 3.0rem;
     .feature {
+        box-shadow: 0 4px 8px 0 rgb(78, 76, 76), 0 6px 20px 0 rgb(78, 76, 76);
+        .flex-mixin(column);
         background-color: white;
         margin-bottom: 3.0rem;
         .img {
@@ -14,6 +16,56 @@
                 border-top-left-radius: 10px;
                 width: 100%;
                 height: 200px;
+            }
+        }
+
+        .writeup {
+            margin: 1.0rem @medium-margin;
+            color: @primary-color;
+            p {
+                font-size: @medium-font;
+            }
+        }
+
+        .info {
+            .flex-mixin(row);
+            justify-content: space-between;
+            margin: @medium-margin;
+            align-items: baseline;
+
+            .rest-info {
+                border: 1px solid black;
+                .flex-mixin(row);
+                width: 100%;
+                padding-right: 3.0rem;
+                .rating {
+                    border: 2px solid @primary-color;
+                    border-radius: 50%;
+                    align-self: baseline;
+                    padding-top: 0;
+
+                    p {
+                        padding: 1.0rem;
+                    }
+                }
+
+                .restaurant-name {
+                    color: grey;
+                    padding-left: 2.0rem;
+                    padding-top: 1.0rem;
+                }
+            }
+
+            .meal {
+                width: 30%;
+                font-size: 40px;
+                margin-top: 2.0rem;
+                margin-bottom: 2.0rem;
+                border: 1px solid black;
+                img {
+                    width: 40%;
+                    padding-top: 2.0rem;
+                }
             }
         }
     }
