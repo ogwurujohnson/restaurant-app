@@ -153,10 +153,14 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
+body {
   display: flex;
   flex-direction: column;
   position: absolute;
+  height: 100vh;
+}
+.container {
+  flex: 1 0 auto;
 }
 .main-header {
   z-index: 999;
@@ -209,7 +213,6 @@ p {
 .search-section {
   display: flex;
   flex-direction: column;
-  height: 50%;
 }
 .search-section .intro-note {
   margin: 2rem auto;
@@ -221,16 +224,13 @@ p {
 .search-section .find-illustrative-image {
   margin: 10px auto;
   width: 100%;
-  height: 50%;
 }
 .search-section .find-illustrative-image img {
   width: 100%;
-  height: 100%;
 }
 .search-section .searchpane {
   margin-top: 2rem;
   width: 100%;
-  height: 10%;
 }
 .search-section .searchpane input {
   border: 1px solid black;
@@ -421,4 +421,9 @@ p {
   padding: 1rem 0;
   color: #4e4c4c;
   text-align: center;
+}
+.footer-section {
+  border: 1px solid black;
+  flex-shrink: 0;
+  padding: 20px;
 }
