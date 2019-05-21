@@ -323,7 +323,7 @@ p {
 }
 .feature-section .feature .writeup {
   margin: 1rem 2rem;
-  color: #6200EE;
+  color: #5e60e1;
 }
 .feature-section .feature .writeup p {
   font-size: 2rem;
@@ -344,7 +344,7 @@ p {
   margin-top: 0;
 }
 .feature-section .feature .info .rest-info .rating {
-  border: 2px solid #6200EE;
+  border: 2px solid #5e60e1;
   border-radius: 50%;
   align-self: baseline;
   padding-top: 0;
