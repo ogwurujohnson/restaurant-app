@@ -250,7 +250,6 @@ p {
   color: white;
 }
 .interests {
-  border: 1px solid black;
   margin-top: 2rem;
   position: relative;
 }
@@ -265,7 +264,30 @@ p {
   padding-top: 1.5rem;
 }
 .interests .interest-grid {
+  position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 1rem;
+}
+.interests .interest-grid .interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 0.5rem;
+  box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
+}
+.interests .interest-grid .interest .img {
+  width: 100%;
+  margin: 2rem;
+  flex: 2;
+}
+.interests .interest-grid .interest .img img {
+  width: 100%;
+  margin: 2rem auto;
+}
+.interests .interest-grid .interest p {
+  color: grey;
 }
