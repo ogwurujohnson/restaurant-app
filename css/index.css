@@ -307,7 +307,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 100%;
 }
 .feature-section .feature .img {
