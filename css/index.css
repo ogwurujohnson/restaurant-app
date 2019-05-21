@@ -290,4 +290,6 @@ p {
 }
 .interests .interest-grid .interest p {
   color: grey;
+  display: block;
+  margin-bottom: 2rem;
 }
