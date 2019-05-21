@@ -1,12 +1,13 @@
 .feature-section {
     .flex-mixin(column);
     position: relative;
-    margin: 1.0rem 3.0rem;
+    margin: 1.0rem 2.0rem;
     .feature {
         box-shadow: 0 4px 8px 0 rgb(78, 76, 76), 0 6px 20px 0 rgb(78, 76, 76);
         .flex-mixin(column);
         background-color: white;
-        margin-bottom: 3.0rem;
+        margin: 3.0rem auto;
+        width: 100%;
         .img {
             border-radius: 10px;
             width: 100%;
@@ -30,14 +31,15 @@
         .info {
             .flex-mixin(row);
             justify-content: space-between;
-            margin: @medium-margin;
+            margin: @small-margin;
             align-items: baseline;
 
             .rest-info {
-                border: 1px solid black;
+                align-self: flex-start;
                 .flex-mixin(row);
                 width: 100%;
                 padding-right: 3.0rem;
+                margin-top: 0;
                 .rating {
                     border: 2px solid @primary-color;
                     border-radius: 50%;
@@ -57,14 +59,13 @@
             }
 
             .meal {
+                align-self: flex-start;
                 width: 30%;
                 font-size: 40px;
-                margin-top: 2.0rem;
                 margin-bottom: 2.0rem;
-                border: 1px solid black;
                 img {
                     width: 40%;
-                    padding-top: 2.0rem;
+                    vertical-align: top;
                 }
             }
         }

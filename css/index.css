@@ -300,14 +300,15 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
 }
 .feature-section .feature {
   box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
+  width: 100%;
 }
 .feature-section .feature .img {
   border-radius: 10px;
@@ -331,15 +332,16 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2rem;
+  margin: 1.5rem;
   align-items: baseline;
 }
 .feature-section .feature .info .rest-info {
-  border: 1px solid black;
+  align-self: flex-start;
   display: flex;
   flex-direction: row;
   width: 100%;
   padding-right: 3rem;
+  margin-top: 0;
 }
 .feature-section .feature .info .rest-info .rating {
   border: 2px solid #6200EE;
@@ -356,13 +358,12 @@ p {
   padding-top: 1rem;
 }
 .feature-section .feature .info .meal {
+  align-self: flex-start;
   width: 30%;
   font-size: 40px;
-  margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid black;
 }
 .feature-section .feature .info .meal img {
   width: 40%;
-  padding-top: 2rem;
+  vertical-align: top;
 }
