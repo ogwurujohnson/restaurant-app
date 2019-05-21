@@ -1,0 +1,23 @@
+.interests {
+    border: 1px solid black;
+    margin-top: @medium-margin;
+
+    .intro-note {
+        h1 {
+            font-size: @xmedium-font;
+            text-align: center;
+            color: rgb(78, 76, 76);
+        }
+        p {
+            text-align: center;
+            color: grey;
+            padding-top: @small-padding;
+        }
+    }
+
+    .interest-grid {
+        .flex-mixin(row);
+        flex-wrap: wrap;
+
+    }
+}

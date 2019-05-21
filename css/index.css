@@ -246,7 +246,21 @@ p {
   color: white;
 }
 .interests {
-  height: 50%;
   border: 1px solid black;
-  margin-top: 8rem;
+  margin-top: 2rem;
+}
+.interests .intro-note h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4e4c4c;
+}
+.interests .intro-note p {
+  text-align: center;
+  color: grey;
+  padding-top: 1.5rem;
+}
+.interests .interest-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
