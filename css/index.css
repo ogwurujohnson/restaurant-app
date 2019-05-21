@@ -300,17 +300,20 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid red;
-  margin-top: 40%;
+  margin: 1rem 3rem;
 }
 .feature-section .feature {
-  background-color: grey;
+  background-color: white;
+  margin-bottom: 3rem;
 }
 .feature-section .feature .img {
-  width: 50%;
-  height: 50%;
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
 }
 .feature-section .feature .img img {
-  width: 50%;
-  height: 30%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 200px;
 }
