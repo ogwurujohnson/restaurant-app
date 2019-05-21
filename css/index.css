@@ -212,7 +212,7 @@ p {
   margin: 2rem auto;
 }
 .search-section .intro-note h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
 }
 .search-section .find-illustrative-image {
@@ -243,4 +243,8 @@ p {
   vertical-align: top;
   text-align: center;
   font-size: 1.5rem;
+}
+.interests {
+  height: 50%;
+  border: 1px solid black;
 }
