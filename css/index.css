@@ -306,6 +306,7 @@ p {
   font-size: 2.5rem;
   color: #4e4c4c;
   padding-bottom: 1rem;
+  text-align: center;
 }
 .feature-section .feature {
   box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
@@ -371,4 +372,51 @@ p {
 .feature-section .feature .info .meal img {
   width: 40%;
   vertical-align: top;
+}
+.how-to {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  border: 1px solid black;
+}
+.how-to .intro {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.how-to .intro h1 {
+  font-size: 2.5rem;
+  color: #4e4c4c;
+  padding-bottom: 1.5rem;
+}
+.how-to .intro p {
+  color: #4e4c4c;
+}
+.how-to .how-to-grid {
+  display: flex;
+  flex-direction: column;
+}
+.how-to .how-to-grid .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  margin: 2rem auto;
+}
+.how-to .how-to-grid .step .img {
+  width: 100%;
+}
+.how-to .how-to-grid .step .img img {
+  width: 100%;
+}
+.how-to .how-to-grid .step h2 {
+  font-size: 2rem;
+  color: #4e4c4c;
+  padding-top: 1rem;
+}
+.how-to .how-to-grid .step p {
+  padding: 1rem 0;
+  color: #4e4c4c;
+  text-align: center;
 }
