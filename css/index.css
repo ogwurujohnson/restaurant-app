@@ -254,7 +254,7 @@ p {
 .interests {
   margin-top: 2rem;
   position: relative;
-  height: 750px;
+  height: 700px;
 }
 .interests .intro-note h1 {
   font-size: 2.5rem;
@@ -309,7 +309,7 @@ p {
   text-align: center;
 }
 .feature-section .feature {
-  box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
+  box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -377,7 +377,6 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  border: 1px solid black;
 }
 .how-to .intro {
   text-align: center;
@@ -396,7 +395,6 @@ p {
   flex-direction: column;
 }
 .how-to .how-to-grid .step {
-  border: 1px solid black;
   box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
   border-radius: 5%;
   display: flex;
