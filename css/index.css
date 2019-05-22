@@ -221,6 +221,9 @@ body {
   font-size: 3.2rem;
   text-align: center;
 }
+.search-section .header-close-image {
+  display: none;
+}
 .search-section .header-images .find-illustrative-image {
   margin: 10px auto;
   width: 100%;
@@ -262,6 +265,7 @@ body {
 }
 @media (min-width: 1024px) {
   .search-section .header-images {
+    height: 50%;
     display: flex;
     flex-direction: row;
   }
@@ -307,6 +311,14 @@ body {
     padding-right: 3rem;
     padding: 0;
     margin-top: 5rem;
+  }
+  .search-section .header-close-image {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
+  .search-section .header-close-image img {
+    width: 100%;
   }
   .search-section .intro-note {
     margin: 3rem auto;
