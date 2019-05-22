@@ -506,9 +506,6 @@ body {
     margin-top: 3rem;
     width: 40%;
   }
-  .feature-section .features .feature.nth-child {
-    height: 100%;
-  }
 }
 .how-to {
   display: flex;
