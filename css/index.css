@@ -162,6 +162,12 @@ body {
 .container {
   flex: 1 0 auto;
 }
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .main-header {
   z-index: 999;
   display: flex;
@@ -381,6 +387,25 @@ body {
 .interests .interest-grid .interest p {
   color: grey;
   display: block;
+}
+@media (min-width: 1024px) {
+  .interests {
+    height: 750px;
+  }
+  .interests .interest-grid .interest {
+    width: 35%;
+  }
+  .interests .interest-grid .interest .img {
+    width: 50%;
+    margin: 2rem auto;
+  }
+  .interests .interest-grid .interest .img img {
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .interests .interest-grid .interest p {
+    font-size: 3rem;
+  }
 }
 .feature-section {
   display: flex;
