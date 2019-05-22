@@ -401,7 +401,7 @@ body {
   }
   .interests .interest-grid .interest .img img {
     width: 100%;
-    margin-left: 3rem;
+    margin: 2rem auto;
   }
   .interests .interest-grid .interest p {
     font-size: 3rem;
