@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- gsap librabry -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
@@ -24,7 +27,7 @@
         <span><i class="fas fa-bars sidemenu-bar"></i></i></span>
 
         <div class="nav-links">
-            <a href="#" class="link">About</a>
+            <a href="#about" class="link">About</a>
             <a href="#" class="link">SignIn<i class="fas fa-user-circle"></i></a>
         </div>
     </header>
@@ -63,7 +66,7 @@
 
         </section>
 
-        <section class="interests">
+        <section id="about" class="interests">
             <div class="intro-note">
                 <h1>What are you interested in?</h1>
                 <p>Explore some of the tips from our partners and friends for the best restaurants</p>
@@ -101,7 +104,7 @@
             <header>
                 <h1>Featured Restaurants</h1>
             </header>
-            <div class="features">
+            <div class="features" data-aos="zoom-in-right">
                 <div class="feature">
                     <div class="img">
                         <img src="assets/img/architecture-ceiling-chairs-262047.jpg" alt="Adventure">
@@ -215,13 +218,55 @@
                 </div>
             </div>
         </section>
+        <section class="about-us">
+            <div class="intro">
+                <h1>Get to Know the Team</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="member">
+                    <div class="avatar">
+                        <div class="img">
+                            <img src="assets/svg/boy.svg" alt="Adventure">
+                        </div>
+                        <h2>Johnson Ogwuru</h2>
+                    </div>
+                    <div class="member-info">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="avatar">
+                        <div class="img">
+                            <img src="assets/svg/boy.svg" alt="Adventure">
+                        </div>
+                        <h2>Johnson Ogwuru</h2>
+                    </div>
+                    <!-- <div class="member-info">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div> -->
+                </div>
+                <div class="member">
+                    <div class="avatar">
+                        <div class="img">
+                            <img src="assets/svg/boy.svg" alt="Adventure">
+                        </div>
+                        <h2>Johnson Ogwuru</h2>
+                    </div>
+                    <!-- <div class="member-info">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div> -->
+                </div>
+            </div>
+        </section>
     </main>
 
     <div class="side-bar">
         <nav class="nav-menu">
             <a href="#" class="link">Home</a>
 
-            <a href="#" class="link">About</a>
+            <a href="#about" class="link">About</a>
 
             <a href="#" class="link">Recommendations</a>
         </nav>
@@ -255,6 +300,13 @@
     </footer>
 
 
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- less script -->
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
     <!-- native script codes -->
