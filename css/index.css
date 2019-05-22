@@ -383,6 +383,7 @@ body {
     width: 75%;
     margin-left: 4rem;
     text-align: left;
+    padding: 1rem;
   }
   .search-section .searchpane button {
     width: 10%;

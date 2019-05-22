@@ -54,8 +54,9 @@ class StyleNav {
     this.nav = element;
 
     this.nav.addEventListener('click', (e) => {
-      
       this.add(this.nav);
+      this.nav.style.backgroundColor = "white";
+      this.nav.style.color = "#6200EE"
     });
     
   }
@@ -70,6 +71,8 @@ class StyleNav {
 
   remove(nav) {
     nav.classList.remove('active');
+    nav.style.background = "#6200EE";
+    nav.style.color = "white";
   }
 
   selectHover(nav) {
