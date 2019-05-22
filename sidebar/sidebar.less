@@ -1,4 +1,9 @@
 .main-header {
+    position: fixed;
+    width: 100%;
+    .nav-links {
+        display: none;
+    }
     z-index: 999;
     .flex-mixin(row);
     justify-content: space-between;
@@ -8,6 +13,36 @@
     i {
         font-size: @medium-font;
     }
+
+    @media @desktop {
+        .sidemenu-bar {
+            display: none;
+        }
+
+        .logo {
+            align-self: baseline;
+        }
+        .nav-links {
+            display: block;
+            margin-right: 3.0rem;
+            a {
+                
+                text-decoration: none;
+                color: white;
+                padding-right: 3.0rem;
+                font-size: 1.5rem;
+                align-self: baseline;
+
+                i {
+                    padding: 0 .5rem;
+                    font-size: 1.5rem;
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+
 }
 
 .side-bar {
@@ -47,4 +82,16 @@
         font-size: @medium-font;
         color: white;
     }
+
+    @media @desktop {
+        display: none;
+    }
+}
+
+
+.active,
+.link:hover  {
+    border: 3px solid white;
+    padding: 1.0rem;
+    width: 90%;
 }

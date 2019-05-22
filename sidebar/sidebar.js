@@ -48,5 +48,44 @@ class SideBar {
   }
 }
 
+
+class StyleNav {
+  constructor(element) {
+    this.nav = element;
+
+    this.nav.addEventListener('click', (e) => {
+      this.add(this.nav);
+      this.nav.style.backgroundColor = "white";
+      this.nav.style.color = "#6200EE"
+    });
+    
+  }
+
+  add(nav) {
+    this.allNav = document.querySelectorAll('.link');
+    this.allNav.forEach(aNav => {
+      this.remove(aNav);
+    });
+    nav.classList.add('active');
+  }
+
+  remove(nav) {
+    nav.classList.remove('active');
+    nav.style.background = "#6200EE";
+    nav.style.color = "white";
+  }
+
+  selectHover(nav) {
+    nav.classList.add('active');
+  }
+}
+
+
+
+
 const sidemenuElement = document.querySelector(".sidemenu-bar");
 const sideBar = new SideBar(sidemenuElement);
+
+
+const navElements = document.querySelectorAll(".link");
+navElements.forEach(nav => new StyleNav(nav));

@@ -5,14 +5,15 @@
   
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
   
   html, body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   
   h1, h2, h3, h4, h5 {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Signika', sans-serif;
     color: black;
   }
   
@@ -25,8 +26,13 @@
   }
   
   p {
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 1.4;
+  }
+
+  i {
+    font-family: 'Raleway', sans-serif;
   }
   
   body {
@@ -37,4 +43,9 @@
   
   .container {
     flex: 1 0 auto;
+
+    @media @desktop {
+      width: 80%;
+      margin: 0 auto;
+    }
   }

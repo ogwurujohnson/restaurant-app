@@ -1,0 +1,57 @@
+.about-us {
+  .flex-mixin(column);
+  margin-top: @large-margin;
+  .intro {
+    padding-top: 3.0rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      color: #4e4c4c;
+      padding-bottom: @small-padding;
+    }
+    p {
+      color: #4e4c4c;
+    }
+  }
+
+  .team {
+    .flex-mixin(column);
+    justify-content: space-between;
+    .team-intro {
+      margin-top: 5.0rem;
+      width: 100%;
+      padding: 2.0rem;
+    }
+    .team-images {
+      margin-top: 3.0rem;
+      img {
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+
+  @media @desktop {
+    .intro {
+      margin-top: 2rem;
+    }
+
+    .team {
+      .flex-mixin(row);
+      justify-content: space-between;
+      .team-intro {
+        margin-top: 5.0rem;
+        width: 50%;
+        padding: 2.0rem;
+      }
+      .team-images {
+        margin-top: 3.0rem;
+        img {
+          width: 100%;
+          height: 80%;
+        }
+      }
+    }
+  }
+}

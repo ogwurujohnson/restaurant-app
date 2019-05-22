@@ -1,82 +1,107 @@
 .feature-section {
-  .flex-mixin(column);
   position: relative;
-  margin: 4.0rem 2rem;
-  h1 {
-    font-size: 2.5rem;
-    color: #4e4c4c;
-    padding-bottom: 1.0rem;
-    text-align: center;
+  margin: 4rem 2rem;
+
+  header {
+    h1 {
+      font-size: 2.5rem;
+      color: #4e4c4c;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
   }
 
-  .feature {
-    box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+  .features {
     .flex-mixin(column);
-    background-color: white;
-    margin: 2rem auto;
-    width: 100%;
-    .img {
-      border-radius: 10px;
+    .feature {
+      box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+      .flex-mixin(column);
+      background-color: white;
+      margin: 2rem auto;
       width: 100%;
-      height: 200px;
-      img {
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+      .img {
+        border-radius: 10px;
         width: 100%;
         height: 200px;
+        img {
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          width: 100%;
+          height: 200px;
+        }
       }
-    }
 
-    .writeup {
-      margin: 1rem @medium-margin;
-      color: rgb(94, 96, 225);
-      p {
-        font-size: @medium-font;
+      .writeup {
+        margin: 1rem @medium-margin;
+        color: rgb(94, 96, 225);
+        p {
+          font-size: @medium-font;
+        }
       }
-    }
 
-    .info {
-      .flex-mixin(row);
-      justify-content: space-between;
-      margin: @small-margin;
-      align-items: baseline;
-
-      .rest-info {
-        align-self: flex-start;
+      .info {
         .flex-mixin(row);
-        width: 100%;
-        padding-right: 3rem;
-        margin-top: 0;
-        .rating {
-          border: 2px solid rgb(94, 96, 225);
-          border-radius: 50%;
-          align-self: baseline;
-          padding-top: 0;
+        justify-content: space-between;
+        margin: @small-margin;
+        align-items: baseline;
 
-          p {
-            padding: 1rem;
+        .rest-info {
+          align-self: flex-start;
+          .flex-mixin(row);
+          width: 60%;
+          padding-right: 3rem;
+          margin-top: 0;
+          .rating {
+            border: 2px solid rgb(94, 96, 225);
+            border-radius: 50%;
+            align-self: baseline;
+            padding-top: 0;
+
+            p {
+              padding: 1rem;
+            }
+          }
+
+          .restaurant-name {
+            color: grey;
+            padding-left: 2rem;
+            padding-top: 1rem;
           }
         }
 
-        .restaurant-name {
-          color: grey;
-          padding-left: 2rem;
-          padding-top: 1rem;
+        .meal {
+          align-self: flex-start;
+          width: 35%;
+          font-size: 40px;
+          margin-bottom: 2rem;
+          img {
+            width: 40%;
+            vertical-align: top;
+            border: 2px solid rgb(94, 96, 225);
+            border-radius: 50%;
+            padding: 1rem;
+          }
         }
       }
+    }
+  }
 
-      .meal {
-        align-self: flex-start;
-        width: 30%;
-        font-size: 40px;
-        margin-bottom: 2rem;
-        img {
-          width: 40%;
-          vertical-align: top;
-          // border: 2px solid rgb(94, 96, 225);
-          // border-radius: 50%;
-        }
+  @media @desktop {
+    flex-wrap: wrap;
+
+    header {
+      height: 0.5%;
+      margin: 3rem auto;
+    }
+
+    .features {
+      .flex-mixin(row);
+      flex-wrap: wrap;
+      .feature {
+        margin-top: 3rem;
+        width: 40%;
       }
+      
     }
   }
 }

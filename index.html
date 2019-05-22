@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#6200EE">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- gsap librabry -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -22,20 +30,43 @@
     <header class="main-header">
         <p class="logo">RestaurantX</p>
         <span><i class="fas fa-bars sidemenu-bar"></i></i></span>
+
+        <div class="nav-links">
+            <a href="#about" class="link">About</a>
+            <a href="#" class="link">SignIn<i class="fas fa-user-circle"></i></a>
+        </div>
     </header>
 
     <main class="container">
         <section class="search-section">
 
+            <div class="header-images">
+                <div class="find-illustrative-image">
+                    <img src="assets/svg/direction.svg" alt="find a place" class="auxilliary">
+                    <img src="assets/svg/findplace.svg" alt="find a place">
+                    <img src="assets/svg/modern-life.svg" alt="find a place" class="auxilliary">
+                </div>
+
+                <img src="assets/svg/right-drawn-arrow.svg" alt="" class="arrow">
+
+                <div class="result-images">
+                    <img src="assets/svg/lovecookie.svg" alt="find a place" class="auxilliary">
+                    <img src="assets/svg/having-fun.svg" alt="find a place">
+                    <img src="assets/svg/love-in-air.svg" alt="find a place" class="auxilliary">
+                </div>
+            </div>
+            <!-- <div class="header-close-image">
+                <img src="assets/svg/Rose-Petals.svg" alt="">
+            </div> -->
+
+
+
             <div class="intro-note">
                 <h1>Discover Best Restaurants Around You</h1>
             </div>
-            <div class="find-illustrative-image">
-                <img src="assets/svg/findplace.svg" alt="find a place">
-            </div>
             <div class="searchpane">
                 <input type="text" placeholder="Enter Location?">
-                <button><i class="fas fa-search"></i></button>
+                <button><i class="fas fa-search">&nbsp;&nbsp;Search</i></button>
             </div>
 
         </section>
@@ -75,64 +106,88 @@
         </section>
 
         <section class="feature-section">
-            <h1>Featured Restaurants</h1>
-            <div class="feature">
-                <div class="img">
-                    <img src="assets/img/architecture-ceiling-chairs-262047.jpg" alt="Adventure">
-                </div>
-                <div class="writeup">
-                    <p>Portobello Pizza</p>
-                </div>
-                <div class="info">
-                    <div class="rest-info">
-                        <div class="rating">
-                            <p>4.0</p>
+            <header>
+                <h1>Featured Restaurants</h1>
+            </header>
+            <div class="features" data-aos="zoom-in-right">
+                <div class="feature">
+                    <div class="img">
+                        <img src="assets/img/architecture-ceiling-chairs-262047.jpg" alt="Adventure">
+                    </div>
+                    <div class="writeup">
+                        <p>Portobello Pizza</p>
+                    </div>
+                    <div class="info">
+                        <div class="rest-info">
+                            <div class="rating">
+                                <p>4.0</p>
+                            </div>
+                            <p class="restaurant-name">Lagos, Nigeria</p>
                         </div>
-                        <p class="restaurant-name">Lagos, Nigeria</p>
-                    </div>
-                    <div class="meal">
-                        <img src="assets/svg/burger.svg" alt="">
-                        <img src="assets/svg/chicken-leg.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="feature">
-                <div class="img">
-                    <img src="assets/img/blur-chef-close-up-262978.jpg" alt="Adventure">
-                </div>
-                <div class="writeup">
-                    <p>SCP Furniture</p>
-                </div>
-                <div class="info">
-                    <div class="rest-info">
-                        <div class="rating">
-                            <p>4.0</p>
+                        <div class="meal">
+                            <img src="assets/svg/burger.svg" alt="">
+                            <img src="assets/svg/chicken-leg.svg" alt="">
                         </div>
-                        <p class="restaurant-name">Lagos, Nigeria</p>
-                    </div>
-                    <div class="meal">
-                        <img src="assets/svg/pizza-slice.svg" alt="">
-                        <img src="assets/svg/burger.svg" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="feature">
-                <div class="img">
-                    <img src="assets/img/chair-cutlery-diner-941861.jpg" alt="Adventure">
-                </div>
-                <div class="writeup">
-                    <p>Bar Boloud</p>
-                </div>
-                <div class="info">
-                    <div class="rest-info">
-                        <div class="rating">
-                            <p>4.0</p>
+                <div class="feature">
+                    <div class="img">
+                        <img src="assets/img/blur-chef-close-up-262978.jpg" alt="Adventure">
+                    </div>
+                    <div class="writeup">
+                        <p>SCP Furniture</p>
+                    </div>
+                    <div class="info">
+                        <div class="rest-info">
+                            <div class="rating">
+                                <p>4.0</p>
+                            </div>
+                            <p class="restaurant-name">Lagos, Nigeria</p>
                         </div>
-                        <p class="restaurant-name">Lagos, Nigeria</p>
+                        <div class="meal">
+                            <img src="assets/svg/pizza-slice.svg" alt="">
+                            <img src="assets/svg/burger.svg" alt="">
+                        </div>
                     </div>
-                    <div class="meal">
-                        <img src="assets/svg/chicken-leg.svg" alt="">
-                        <img src="assets/svg/pizza-slice.svg" alt="">
+                </div>
+                <div class="feature">
+                    <div class="img">
+                        <img src="assets/img/chair-cutlery-diner-941861.jpg" alt="Adventure">
+                    </div>
+                    <div class="writeup">
+                        <p>Bar Boloud</p>
+                    </div>
+                    <div class="info">
+                        <div class="rest-info">
+                            <div class="rating">
+                                <p>4.0</p>
+                            </div>
+                            <p class="restaurant-name">Lagos, Nigeria</p>
+                        </div>
+                        <div class="meal">
+                            <img src="assets/svg/chicken-leg.svg" alt="">
+                            <img src="assets/svg/pizza-slice.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="img">
+                        <img src="assets/img/chair-cutlery-diner-941861.jpg" alt="Adventure">
+                    </div>
+                    <div class="writeup">
+                        <p>Bar Boloud</p>
+                    </div>
+                    <div class="info">
+                        <div class="rest-info">
+                            <div class="rating">
+                                <p>4.0</p>
+                            </div>
+                            <p class="restaurant-name">Lagos, Nigeria</p>
+                        </div>
+                        <div class="meal">
+                            <img src="assets/svg/chicken-leg.svg" alt="">
+                            <img src="assets/svg/pizza-slice.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,17 +211,37 @@
                     <div class="img">
                         <img src="assets/svg/booking.svg" alt="Adventure">
                     </div>
-                    <h2>Arrive at Restaurant</h2>
+                    <h2>Select A Restaurant</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div class="step">
                     <div class="img">
                         <img src="assets/svg/welcoming_chef.svg" alt="Adventure">
                     </div>
-                    <h2>Select A Restaurant</h2>
+                    <h2>Arrive at Restaurant</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
+        </section>
+        <section class="about-us" id="about">
+            <div class="intro">
+                <h1>Get to Know the Team</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="team">
+                <div class="team-intro">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.printing and typesetting industry.Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.</p>
+                </div>
+                <div class="team-images">
+                    <img src="assets/svg/team.svg" alt="">
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -174,12 +249,12 @@
         <nav class="nav-menu">
             <a href="#" class="link">Home</a>
 
-            <a href="#" class="link">About</a>
+            <a href="#about" class="link">About</a>
 
             <a href="#" class="link">Recommendations</a>
         </nav>
 
-        <button class="login-button">Login</button>
+        <button class="login-button">SignIn</button>
     </div>
 
     <footer class="footer-section">
@@ -199,6 +274,7 @@
         </div>
         <div class="get-app">
             <h1>Get the app</h1>
+            <img src="assets/svg/double_angle.svg" alt="" class="arrow">
             <div class="stores">
                 <img src="assets/svg/app-store.svg" alt="" class="store">
                 <img src="assets/svg/playstore.svg" alt="" class="store">
@@ -207,6 +283,13 @@
     </footer>
 
 
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- less script -->
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
     <!-- native script codes -->
