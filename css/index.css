@@ -169,6 +169,8 @@ body {
   }
 }
 .main-header {
+  position: fixed;
+  width: 100%;
   z-index: 999;
   display: flex;
   flex-direction: row;
@@ -177,8 +179,34 @@ body {
   background-color: #6200EE;
   color: white;
 }
+.main-header .nav-links {
+  display: none;
+}
 .main-header i {
   font-size: 2rem;
+}
+@media (min-width: 1024px) {
+  .main-header .sidemenu-bar {
+    display: none;
+  }
+  .main-header .logo {
+    align-self: baseline;
+  }
+  .main-header .nav-links {
+    display: block;
+  }
+  .main-header .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    align-self: baseline;
+  }
+  .main-header .nav-links a i {
+    padding: 0 0.3rem;
+    font-size: 1.5rem;
+    background: transparent;
+  }
 }
 .side-bar {
   z-index: 500;
@@ -216,9 +244,15 @@ body {
   font-size: 2rem;
   color: white;
 }
+@media (min-width: 1024px) {
+  .side-bar {
+    display: none;
+  }
+}
 .search-section {
   display: flex;
   flex-direction: column;
+  margin-top: 8rem;
 }
 .search-section .intro-note {
   margin: 2rem auto;
@@ -270,6 +304,9 @@ body {
   color: white;
 }
 @media (min-width: 1024px) {
+  .search-section {
+    margin-top: 0;
+  }
   .search-section .header-images {
     height: 50%;
     display: flex;
@@ -483,7 +520,7 @@ body {
   margin-bottom: 2rem;
 }
 .feature-section .features .feature .info .meal img {
-  width: 45%;
+  width: 40%;
   vertical-align: top;
   border: 2px solid #5e60e1;
   border-radius: 50%;
