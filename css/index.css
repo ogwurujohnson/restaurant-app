@@ -221,12 +221,21 @@ body {
   font-size: 3.2rem;
   text-align: center;
 }
-.search-section .find-illustrative-image {
+.search-section .header-images .find-illustrative-image {
   margin: 10px auto;
   width: 100%;
 }
-.search-section .find-illustrative-image img {
+.search-section .header-images .find-illustrative-image img {
   width: 100%;
+}
+.search-section .header-images .find-illustrative-image .auxilliary {
+  display: none;
+}
+.search-section .header-images .arrow {
+  display: none;
+}
+.search-section .header-images .result-images {
+  display: none;
 }
 .search-section .searchpane {
   margin-top: 2rem;
@@ -251,10 +260,74 @@ body {
   font-size: 1.5rem;
   color: white;
 }
+@media (min-width: 1024px) {
+  .search-section .header-images {
+    display: flex;
+    flex-direction: row;
+  }
+  .search-section .header-images .find-illustrative-image {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 400px;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+  .search-section .header-images .find-illustrative-image img {
+    width: 30%;
+    padding-right: 3rem;
+    padding-top: 0;
+    flex: 1;
+  }
+  .search-section .header-images .find-illustrative-image .auxilliary {
+    display: block;
+    flex: 0;
+    width: 20%;
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .search-section .header-images .arrow {
+    display: block;
+    width: 5%;
+  }
+  .search-section .header-images .result-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+  .search-section .header-images .result-images img {
+    width: 30%;
+    height: 100%;
+    padding-right: 3rem;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .search-section .intro-note {
+    margin: 3rem auto;
+  }
+  .search-section .searchpane {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  .search-section .searchpane input {
+    width: 75%;
+    margin-left: 4rem;
+    text-align: left;
+  }
+  .search-section .searchpane button {
+    width: 10%;
+  }
+}
 .interests {
   margin-top: 2rem;
   margin-bottom: 3rem;
-  border: 1px solid black;
   position: relative;
   height: 750px;
 }
@@ -346,7 +419,7 @@ body {
   align-self: flex-start;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 60%;
   padding-right: 3rem;
   margin-top: 0;
 }
@@ -366,13 +439,16 @@ body {
 }
 .feature-section .feature .info .meal {
   align-self: flex-start;
-  width: 30%;
+  width: 35%;
   font-size: 40px;
   margin-bottom: 2rem;
 }
 .feature-section .feature .info .meal img {
-  width: 40%;
+  width: 45%;
   vertical-align: top;
+  border: 2px solid #5e60e1;
+  border-radius: 50%;
+  padding: 1rem;
 }
 .how-to {
   display: flex;
