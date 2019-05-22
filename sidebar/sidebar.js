@@ -53,11 +53,25 @@ class StyleNav {
   constructor(element) {
     this.nav = element;
 
-    this.nav
+    this.nav.addEventListener('click', () => {
+      this.add(this.nav);
+    });
   }
 
-  encloseNav(nav) {
+  add(nav) {
+    this.allNav = document.querySelectorAll('.link');
+    this.allNav.forEach(aNav => {
+      this.remove(aNav);
+    });
+    nav.classList.add('active');
+  }
 
+  remove(nav) {
+    nav.classList.remove('active');
+  }
+
+  selectHover(nav) {
+    nav.classList.add('active');
   }
 }
 
