@@ -408,18 +408,20 @@ body {
   }
 }
 .feature-section {
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin: 4rem 2rem;
 }
-.feature-section h1 {
+.feature-section header h1 {
   font-size: 2.5rem;
   color: #4e4c4c;
   padding-bottom: 1rem;
   text-align: center;
 }
-.feature-section .feature {
+.feature-section .features {
+  display: flex;
+  flex-direction: column;
+}
+.feature-section .features .feature {
   box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
   display: flex;
   flex-direction: column;
@@ -427,32 +429,32 @@ body {
   margin: 2rem auto;
   width: 100%;
 }
-.feature-section .feature .img {
+.feature-section .features .feature .img {
   border-radius: 10px;
   width: 100%;
   height: 200px;
 }
-.feature-section .feature .img img {
+.feature-section .features .feature .img img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
   height: 200px;
 }
-.feature-section .feature .writeup {
+.feature-section .features .feature .writeup {
   margin: 1rem 2rem;
   color: #5e60e1;
 }
-.feature-section .feature .writeup p {
+.feature-section .features .feature .writeup p {
   font-size: 2rem;
 }
-.feature-section .feature .info {
+.feature-section .features .feature .info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 1.5rem;
   align-items: baseline;
 }
-.feature-section .feature .info .rest-info {
+.feature-section .features .feature .info .rest-info {
   align-self: flex-start;
   display: flex;
   flex-direction: row;
@@ -460,32 +462,50 @@ body {
   padding-right: 3rem;
   margin-top: 0;
 }
-.feature-section .feature .info .rest-info .rating {
+.feature-section .features .feature .info .rest-info .rating {
   border: 2px solid #5e60e1;
   border-radius: 50%;
   align-self: baseline;
   padding-top: 0;
 }
-.feature-section .feature .info .rest-info .rating p {
+.feature-section .features .feature .info .rest-info .rating p {
   padding: 1rem;
 }
-.feature-section .feature .info .rest-info .restaurant-name {
+.feature-section .features .feature .info .rest-info .restaurant-name {
   color: grey;
   padding-left: 2rem;
   padding-top: 1rem;
 }
-.feature-section .feature .info .meal {
+.feature-section .features .feature .info .meal {
   align-self: flex-start;
   width: 35%;
   font-size: 40px;
   margin-bottom: 2rem;
 }
-.feature-section .feature .info .meal img {
+.feature-section .features .feature .info .meal img {
   width: 45%;
   vertical-align: top;
   border: 2px solid #5e60e1;
   border-radius: 50%;
   padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .feature-section {
+    flex-wrap: wrap;
+  }
+  .feature-section header {
+    height: 0.5%;
+    margin: 3rem auto;
+  }
+  .feature-section .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .feature-section .features .feature {
+    margin-top: 3rem;
+    width: 45%;
+  }
 }
 .how-to {
   display: flex;
