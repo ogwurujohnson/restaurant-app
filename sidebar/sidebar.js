@@ -53,9 +53,11 @@ class StyleNav {
   constructor(element) {
     this.nav = element;
 
-    this.nav.addEventListener('click', () => {
+    this.nav.addEventListener('click', (e) => {
+      e.preventDefault();
       this.add(this.nav);
     });
+    
   }
 
   add(nav) {
