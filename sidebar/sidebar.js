@@ -48,5 +48,25 @@ class SideBar {
   }
 }
 
+
+class StyleNav {
+  constructor(element) {
+    this.nav = element;
+
+    this.nav
+  }
+
+  encloseNav(nav) {
+
+  }
+}
+
+
+
+
 const sidemenuElement = document.querySelector(".sidemenu-bar");
 const sideBar = new SideBar(sidemenuElement);
+
+
+const navElements = document.querySelectorAll(".link");
+navElements.forEach(nav => new StyleNav(nav));
