@@ -134,9 +134,6 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 h1,
 h2,
@@ -156,12 +153,23 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+}
+.container {
+  flex: 1 0 auto;
+}
 .main-header {
   z-index: 999;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2.5rem;
+  background-color: #6200EE;
+  color: white;
 }
 .main-header i {
   font-size: 2rem;
@@ -171,6 +179,7 @@ p {
   position: fixed;
   background: black;
   width: 0%;
+  opacity: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -200,4 +209,256 @@ p {
   background: transparent;
   font-size: 2rem;
   color: white;
+}
+.search-section {
+  display: flex;
+  flex-direction: column;
+}
+.search-section .intro-note {
+  margin: 2rem auto;
+}
+.search-section .intro-note h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.search-section .find-illustrative-image {
+  margin: 10px auto;
+  width: 100%;
+}
+.search-section .find-illustrative-image img {
+  width: 100%;
+}
+.search-section .searchpane {
+  margin-top: 2rem;
+  width: 100%;
+}
+.search-section .searchpane input {
+  border: 1px solid black;
+  width: 70%;
+  height: 50px;
+  margin-left: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.search-section .searchpane button {
+  border: 1px solid #6200EE;
+  width: 20%;
+  height: 50px;
+  margin-right: 1.5rem;
+  background: #6200EE;
+  vertical-align: top;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.interests {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid black;
+  position: relative;
+  height: 750px;
+}
+.interests .intro-note h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4e4c4c;
+}
+.interests .intro-note p {
+  text-align: center;
+  color: grey;
+  padding-top: 1.5rem;
+}
+.interests .interest-grid {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 2rem;
+}
+.interests .interest-grid .interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  margin: 0.5rem;
+  box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
+}
+.interests .interest-grid .interest .img {
+  width: 100%;
+  margin: 2rem;
+  flex: 2;
+}
+.interests .interest-grid .interest .img img {
+  width: 100%;
+  margin: 2rem auto;
+}
+.interests .interest-grid .interest p {
+  color: grey;
+  display: block;
+}
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 4rem 2rem;
+}
+.feature-section h1 {
+  font-size: 2.5rem;
+  color: #4e4c4c;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.feature-section .feature {
+  box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem auto;
+  width: 100%;
+}
+.feature-section .feature .img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+.feature-section .feature .img img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+.feature-section .feature .writeup {
+  margin: 1rem 2rem;
+  color: #5e60e1;
+}
+.feature-section .feature .writeup p {
+  font-size: 2rem;
+}
+.feature-section .feature .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem;
+  align-items: baseline;
+}
+.feature-section .feature .info .rest-info {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 3rem;
+  margin-top: 0;
+}
+.feature-section .feature .info .rest-info .rating {
+  border: 2px solid #5e60e1;
+  border-radius: 50%;
+  align-self: baseline;
+  padding-top: 0;
+}
+.feature-section .feature .info .rest-info .rating p {
+  padding: 1rem;
+}
+.feature-section .feature .info .rest-info .restaurant-name {
+  color: grey;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.feature-section .feature .info .meal {
+  align-self: flex-start;
+  width: 30%;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+.feature-section .feature .info .meal img {
+  width: 40%;
+  vertical-align: top;
+}
+.how-to {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.how-to .intro {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.how-to .intro h1 {
+  font-size: 2.5rem;
+  color: #4e4c4c;
+  padding-bottom: 1.5rem;
+}
+.how-to .intro p {
+  color: #4e4c4c;
+}
+.how-to .how-to-grid {
+  display: flex;
+  flex-direction: column;
+}
+.how-to .how-to-grid .step {
+  box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  margin: 2rem auto;
+}
+.how-to .how-to-grid .step .img {
+  width: 100%;
+  height: 50%;
+}
+.how-to .how-to-grid .step .img img {
+  width: 100%;
+  height: 100%;
+}
+.how-to .how-to-grid .step h2 {
+  font-size: 2rem;
+  color: #4e4c4c;
+  padding-top: 1rem;
+}
+.how-to .how-to-grid .step p {
+  padding: 1rem 0;
+  color: #4e4c4c;
+  text-align: center;
+}
+.footer-section {
+  flex-shrink: 0;
+  padding-top: 3rem;
+}
+.footer-section .social-section {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  width: 80%;
+}
+.footer-section .social-section .social {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.footer-section .social-section .social img {
+  width: 100%;
+  padding: 2rem;
+}
+.footer-section .get-app {
+  background-color: #6200EE;
+}
+.footer-section .get-app h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  color: white;
+}
+.footer-section .get-app .stores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-section .get-app .stores img {
+  width: 20%;
 }

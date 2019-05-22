@@ -9,8 +9,6 @@
   
   html, body {
     font-family: 'Ubuntu', sans-serif;
-    .flex-mixin(column);
-    height: 100vh;
   }
   
   h1, h2, h3, h4, h5 {
@@ -31,5 +29,12 @@
     line-height: 1.4;
   }
   
+  body {
+    .flex-mixin(column);
+    position: absolute;
+    height: 100vh;
+  }
   
-  
+  .container {
+    flex: 1 0 auto;
+  }

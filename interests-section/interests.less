@@ -1,0 +1,49 @@
+.interests {
+  margin-top: @medium-margin;
+  margin-bottom: @large-margin;
+  border: 1px solid black;
+  position: relative;
+  height: 750px;
+  // change on desktop to 1000px;
+  .intro-note {
+    h1 {
+      font-size: @xmedium-font;
+      text-align: center;
+      color: rgb(78, 76, 76);
+    }
+    p {
+      text-align: center;
+      color: grey;
+      padding-top: @small-padding;
+    }
+  }
+
+  .interest-grid {
+    position: absolute;
+    .flex-mixin(row);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.0rem 2.0rem;
+    .interest {
+      .flex-mixin(column);
+      align-items: center;
+      width: 47%;
+      margin: 0.5rem;
+      box-shadow: 0 4px 8px 0 rgb(78, 76, 76), 0 6px 20px 0 rgb(78, 76, 76);
+      .img {
+        width: 100%;
+        margin: 2rem;
+        flex: 2;
+
+        img {
+          width: 100%;
+          margin: 2rem auto;
+        }
+      }
+      p {
+        color: grey;
+        display: block;
+      }
+    }
+  }
+}
