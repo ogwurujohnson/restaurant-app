@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Signika', sans-serif;
   color: black;
 }
 h2 {
@@ -151,6 +151,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
+  font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
 }
@@ -443,14 +444,15 @@ body {
   }
   .interests .interest-grid .interest .img {
     width: 50%;
-    margin: 2rem auto;
+    margin: 2rem;
   }
   .interests .interest-grid .interest .img img {
     width: 100%;
-    margin: 2rem auto;
+    margin: 2rem;
   }
   .interests .interest-grid .interest p {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 2rem;
   }
 }
 .feature-section {
