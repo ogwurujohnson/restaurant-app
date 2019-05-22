@@ -504,7 +504,10 @@ body {
   }
   .feature-section .features .feature {
     margin-top: 3rem;
-    width: 45%;
+    width: 40%;
+  }
+  .feature-section .features .feature.nth-child {
+    height: 100%;
   }
 }
 .how-to {
@@ -556,6 +559,21 @@ body {
   padding: 1rem 0;
   color: #4e4c4c;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .how-to .intro {
+    margin-top: 2rem;
+  }
+  .how-to .how-to-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  .how-to .how-to-grid .step {
+    padding: 1.5rem;
+    width: 30%;
+  }
 }
 .footer-section {
   flex-shrink: 0;
