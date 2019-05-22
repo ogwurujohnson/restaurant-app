@@ -130,6 +130,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -616,6 +617,93 @@ body {
     width: 30%;
   }
 }
+.about-us {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.about-us .intro {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.about-us .intro h1 {
+  font-size: 2.5rem;
+  color: #4e4c4c;
+  padding-bottom: 1.5rem;
+}
+.about-us .intro p {
+  color: #4e4c4c;
+}
+.about-us .team-grid {
+  display: flex;
+  flex-direction: column;
+}
+.about-us .team-grid .member {
+  box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  margin: 2rem auto;
+}
+.about-us .team-grid .member .avatar {
+  margin-top: 6rem;
+}
+.about-us .team-grid .member .avatar .img {
+  padding-top: 5rem;
+  width: 100%;
+  height: 50%;
+  border-radius: 50%;
+}
+.about-us .team-grid .member .avatar .img img {
+  width: 100%;
+  height: 100%;
+}
+.about-us .team-grid .member .avatar h2 {
+  font-size: 2rem;
+  color: #4e4c4c;
+  padding-top: 1rem;
+  text-align: center;
+}
+.about-us .team-grid .member .member-info {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.about-us .team-grid .member .member-info p {
+  padding: 1rem 0;
+  color: #4e4c4c;
+  text-align: center;
+}
+.about-us .team-grid .member:hover .avatar {
+  transform: rotateY(180deg);
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+@media (min-width: 1024px) {
+  .about-us .intro {
+    margin-top: 2rem;
+  }
+  .about-us .team-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  .about-us .team-grid .member {
+    width: 30%;
+  }
+  .about-us .team-grid .member .avatar {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .about-us .team-grid .member .avatar img {
+    border-radius: 50%;
+  }
+}
 .footer-section {
   flex-shrink: 0;
   padding-top: 3rem;
@@ -646,6 +734,9 @@ body {
   padding-top: 3rem;
   color: white;
 }
+.footer-section .get-app .arrow {
+  display: none;
+}
 .footer-section .get-app .stores {
   display: flex;
   flex-direction: row;
@@ -670,6 +761,7 @@ body {
     justify-content: space-evenly;
   }
   .footer-section .get-app .arrow {
+    display: block;
     width: 3%;
     height: 2%;
     margin-left: 0;
