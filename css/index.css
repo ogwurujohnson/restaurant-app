@@ -668,6 +668,9 @@ body {
   padding-top: 1rem;
   text-align: center;
 }
+.about-us .team-grid .member .avatar p {
+  padding-top: 2rem;
+}
 .about-us .team-grid .member .member-info {
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -676,12 +679,6 @@ body {
   padding: 1rem 0;
   color: #4e4c4c;
   text-align: center;
-}
-.about-us .team-grid .member:hover .avatar {
-  transform: rotateY(180deg);
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
 }
 @media (min-width: 1024px) {
   .about-us .intro {

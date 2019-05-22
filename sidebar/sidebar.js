@@ -54,7 +54,7 @@ class StyleNav {
     this.nav = element;
 
     this.nav.addEventListener('click', (e) => {
-      e.preventDefault();
+      
       this.add(this.nav);
     });
     
