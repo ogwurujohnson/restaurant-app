@@ -347,7 +347,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 3rem;
   position: relative;
-  height: 750px;
+  height: 650px;
 }
 .interests .intro-note h1 {
   font-size: 2.5rem;
@@ -371,7 +371,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 47%;
+  width: 40%;
   margin: 0.5rem;
   box-shadow: 0 4px 8px 0 #4e4c4c, 0 6px 20px 0 #4e4c4c;
 }
