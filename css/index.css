@@ -250,10 +250,11 @@ body {
     display: none;
   }
 }
-.active {
+.active,
+.link:hover {
   border: 3px solid white;
   padding: 1rem;
-  width: 10%;
+  width: 90%;
 }
 .search-section {
   display: flex;
