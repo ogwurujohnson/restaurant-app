@@ -50,14 +50,21 @@ class Featured {
 
     createFeature(restaurant) {
         this.singleFeature = document.createElement('div');
-        
+        this.singleFeature.setAttribute('class', 'feature');
+
         this.modifyFeature(restaurant, this.singleFeature);
     }
 
     modifyFeature(restaurantData, newElement) {
         this.featureImage = document.createElement('div');
+        this.featureImage.setAttribute('class', 'img');
+
         this.featureName = document.createElement('div');
+        this.featureName.setAttribute('class', 'writeup');
+
         this.featureInfo = document.createElement('div');
+        this.featureInfo.setAttribute('class', 'info');
+
         this.featureRestInfo = document.createElement('div');
         this.featureRating = document.createElement('div');
         this.featureMeal = document.createElement('div');
@@ -74,6 +81,13 @@ class Featured {
         this.featImage = document.createElement('img');
         this.featImage.setAttribute('src', restaurantData.background);
         this.featureImage.appendChild(this.featImage);
+
+        this.name = document.createElement('p');
+        this.name.innerText = restaurantData.name;
+        this.featureName.appendChild(this.name);
+
+        
+
         console.log(newElement);
     }
 }
