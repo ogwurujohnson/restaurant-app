@@ -34,7 +34,7 @@ const restaurants = [
         meal1: "assets/svg/burger.svg",
         meal2: "assets/svg/chicken-leg.svg",
         location: "Lagos Nigeria",
-        background: "assets/img/chair-cutlery-diner-941861.jpg"
+        background: "assets/img/chairs-menu-restaurant-6267.jpg"
     },
     
 ]
