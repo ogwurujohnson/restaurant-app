@@ -693,7 +693,7 @@ body {
 .footer-section .social-section {
   display: flex;
   flex-direction: row;
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 80%;
 }
 .footer-section .social-section .social {
@@ -713,7 +713,7 @@ body {
 .footer-section .get-app h1 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 3rem;
+  padding: 1rem auto;
   color: white;
 }
 .footer-section .get-app .arrow {
@@ -722,10 +722,17 @@ body {
 .footer-section .get-app .stores {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 2%;
 }
 .footer-section .get-app .stores img {
   width: 20%;
+}
+.footer-section .get-app .stores .store {
+  height: 2%;
+  width: 10%;
+  margin: 0 2rem;
+  padding-bottom: 1.5rem;
 }
 @media (min-width: 1024px) {
   .footer-section .social-section {
