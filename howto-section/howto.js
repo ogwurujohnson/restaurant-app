@@ -1,3 +1,4 @@
+// Mock Array data for 
 const stages = [
     {
         id: 1,
@@ -19,7 +20,18 @@ const stages = [
     },
 ]
 
+/**
+ *
+ *
+ * @class HowTo
+ */
 class HowTo {
+
+    /**
+     *Creates an instance of HowTo.
+     * @param {*} howToGrid
+     * @memberof HowTo
+     */
     constructor(howToGrid) {
         this.howToGrid = howToGrid;
 
@@ -28,6 +40,12 @@ class HowTo {
         });
     }
 
+    /**
+     *
+     *
+     * @param {*} stage
+     * @memberof HowTo
+     */
     createCard(stage) {
         this.stepCard = document.createElement('div');
         this.stepCard.setAttribute('class', 'step');
@@ -36,6 +54,14 @@ class HowTo {
         this.modifyCard(stage, this.stepCard);
     }
 
+
+    /**
+     *
+     *
+     * @param {*} stage
+     * @param {*} stepCard
+     * @memberof HowTo
+     */
     modifyCard(stage, stepCard) {
         this.cardImage = document.createElement('div');
         this.cardImage.setAttribute('class', 'img');
@@ -45,7 +71,6 @@ class HowTo {
         this.img.setAttribute('src', stage.image);
         this.cardImage.appendChild(this.img);
         
-        console.log(this.cardImage);
 
         this.cardTitle = document.createElement('h2');
         this.cardTitle.innerText = stage.title;
@@ -64,4 +89,5 @@ class HowTo {
 }
 
 const howTo = document.querySelector('.how-to-grid');
+// instantiate the HowTo class
 new HowTo(howTo);

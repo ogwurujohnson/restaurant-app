@@ -1,6 +1,17 @@
 // sidebar class
 
+/**
+ *
+ *
+ * @class SideBar
+ */
 class SideBar {
+
+  /**
+   *Creates an instance of SideBar.
+   * @param {*} menu
+   * @memberof SideBar
+   */
   constructor(menu) {
     this.menu = menu;
     this.logo = document.querySelector(".logo");
@@ -22,6 +33,12 @@ class SideBar {
     this.isOpen = false;
   }
 
+
+  /**
+   *
+   *
+   * @memberof SideBar
+   */
   toggleMenu() {
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
@@ -49,7 +66,18 @@ class SideBar {
 }
 
 
+/**
+ *
+ *
+ * @class StyleNav
+ */
 class StyleNav {
+
+  /**
+   *Creates an instance of StyleNav.
+   * @param {*} element
+   * @memberof StyleNav
+   */
   constructor(element) {
     this.nav = element;
 
@@ -61,6 +89,13 @@ class StyleNav {
     
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   add(nav) {
     this.allNav = document.querySelectorAll('.link');
     this.allNav.forEach(aNav => {
@@ -69,12 +104,26 @@ class StyleNav {
     nav.classList.add('active');
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   remove(nav) {
     nav.classList.remove('active');
     nav.style.background = "#6200EE";
     nav.style.color = "white";
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   selectHover(nav) {
     nav.classList.add('active');
   }

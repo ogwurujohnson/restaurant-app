@@ -1,4 +1,4 @@
-
+// Mock array for making featured section dynamic
 const restaurants = [
     {
         id: 1,
@@ -40,8 +40,18 @@ const restaurants = [
 ]
 
 
-
+/**
+ *
+ *
+ * @class Featured
+ */
 class Featured {
+
+    /**
+     *Creates an instance of Featured.
+     * @param {*} featuresBlock
+     * @memberof Featured
+     */
     constructor(featuresBlock) {
         this.featuresBlock = featuresBlock;
         //console.log(this.featuresBlock);
@@ -50,6 +60,12 @@ class Featured {
         })
     }
 
+    /**
+     *
+     *
+     * @param {*} restaurant
+     * @memberof Featured
+     */
     createFeature(restaurant) {
         this.singleFeature = document.createElement('div');
         this.singleFeature.setAttribute('class', 'feature');
@@ -58,6 +74,13 @@ class Featured {
         this.modifyFeature(restaurant, this.singleFeature);
     }
 
+    /**
+     *
+     *
+     * @param {*} restaurantData
+     * @param {*} newElement
+     * @memberof Featured
+     */
     modifyFeature(restaurantData, newElement) {
         this.featureImage = document.createElement('div');
         this.featureImage.setAttribute('class', 'img');
@@ -119,5 +142,7 @@ class Featured {
     }
 }
 
+
 const features = document.querySelector('.features');
+// intantiate the Featured class and pass to it an argument of the features block
 new Featured(features)
