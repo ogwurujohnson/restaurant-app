@@ -4,19 +4,19 @@ const stages = [
         id: 1,
         title: "Choose Area",
         image: "assets/svg/choose.svg",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        content: "Looking for restaurants in an area to eat, to have a personal time, meet with friends or have a date with your loved one?.",
     },
     {
         id: 2,
         title: "Select A Restaurant",
         image: "assets/svg/booking.svg",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        content: "Search and filter hundreds of listings, read reviews, explore photos and find the perfect spot. Book directly from the restaurant passport app.",
     },
     {
         id: 3,
         title: "Arrive at Restaurant",
         image: "assets/svg/welcoming_chef.svg",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        content: "Go and have a good time, recieve the best customer service and comfort you deserve. All of those, thanks to Restaurant Passport!.",
     },
 ]
 
