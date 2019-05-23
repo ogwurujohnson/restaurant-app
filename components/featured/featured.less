@@ -90,6 +90,26 @@
     }
   }
 
+  // styling for tablet screen
+  @media @tablet {
+    flex-wrap: wrap;
+
+    header {
+      height: 0.5%;
+      margin: 3rem auto;
+    }
+
+    .features {
+      .flex-mixin(row);
+      flex-wrap: wrap;
+      .feature {
+        margin-top: 3rem;
+        width: 45%;
+      }
+      
+    }
+  }
+
   // styling the desktop section of the feature section
   @media @desktop {
     flex-wrap: wrap;
@@ -105,25 +125,6 @@
       .feature {
         margin-top: 3rem;
         width: 40%;
-      }
-      
-    }
-  }
-
-  @media @tablet {
-    flex-wrap: wrap;
-
-    header {
-      height: 0.5%;
-      margin: 3rem auto;
-    }
-
-    .features {
-      .flex-mixin(row);
-      flex-wrap: wrap;
-      .feature {
-        margin-top: 3rem;
-        width: 45%;
       }
       
     }
