@@ -6,34 +6,34 @@ const restaurants = [
         rating: "4.0",
         meal1: "assets/svg/burger.svg",
         meal2: "assets/svg/chicken-leg.svg",
-        location: "Lagos Nigeria",
+        location: "Lagos, Nigeria",
         background: "assets/img/architecture-ceiling-chairs-262047.jpg"
     },
     {
         id: 2,
-        name: "SCP Furniture",
+        name: "Noble and Sons Eatery",
         rating: "5.0",
         meal1: "assets/svg/pizza-slice.svg",
         meal2: "assets/svg/burger.svg",
-        location: "Lagos Nigeria",
+        location: "Lagos, Nigeria",
         background: "assets/img/blur-chef-close-up-262978.jpg"
     },
     {
         id: 3,
-        name: "Bar Boloud",
+        name: "Iya Nabeelah's Kitchen",
         rating: "3.0",
         meal1: "assets/svg/chicken-leg.svg",
         meal2: "assets/svg/pizza-slice.svg",
-        location: "Lagos Nigeria",
+        location: "Lagos, Nigeria",
         background: "assets/img/chair-cutlery-diner-941861.jpg"
     },
     {
         id: 4,
-        name: "Melvines Kitchen",
+        name: "Melvine's Kitchen",
         rating: "4.0",
         meal1: "assets/svg/burger.svg",
         meal2: "assets/svg/chicken-leg.svg",
-        location: "Lagos Nigeria",
+        location: "Lagos, Nigeria",
         background: "assets/img/chairs-menu-restaurant-6267.jpg"
     },
     
