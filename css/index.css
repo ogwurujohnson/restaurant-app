@@ -218,6 +218,30 @@ body {
     background: transparent;
   }
 }
+@media (min-width: 750px) {
+  .main-header .sidemenu-bar {
+    display: none;
+  }
+  .main-header .logo {
+    align-self: baseline;
+  }
+  .main-header .nav-links {
+    display: block;
+    margin-left: 3rem;
+  }
+  .main-header .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding-right: 3rem;
+    font-size: 1.5rem;
+    align-self: baseline;
+  }
+  .main-header .nav-links a i {
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    background: transparent;
+  }
+}
 .side-bar {
   z-index: 500;
   position: fixed;
@@ -255,6 +279,11 @@ body {
   color: white;
 }
 @media (min-width: 1024px) {
+  .side-bar {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
   .side-bar {
     display: none;
   }
