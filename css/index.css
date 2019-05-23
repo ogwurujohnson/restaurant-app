@@ -705,6 +705,24 @@ body {
     width: 40%;
   }
 }
+@media (min-width: 750px) {
+  .feature-section {
+    flex-wrap: wrap;
+  }
+  .feature-section header {
+    height: 0.5%;
+    margin: 3rem auto;
+  }
+  .feature-section .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .feature-section .features .feature {
+    margin-top: 3rem;
+    width: 45%;
+  }
+}
 .how-to {
   display: flex;
   flex-direction: column;

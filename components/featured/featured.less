@@ -109,4 +109,23 @@
       
     }
   }
+
+  @media @tablet {
+    flex-wrap: wrap;
+
+    header {
+      height: 0.5%;
+      margin: 3rem auto;
+    }
+
+    .features {
+      .flex-mixin(row);
+      flex-wrap: wrap;
+      .feature {
+        margin-top: 3rem;
+        width: 45%;
+      }
+      
+    }
+  }
 }
