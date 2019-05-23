@@ -3,7 +3,7 @@ const restaurants = [
     {
         id: 1,
         name: "Portobello Pizza",
-        rating: 4.0,
+        rating: "4.0",
         meal1: "assets/svg/burger.svg",
         meal2: "assets/svg/chicken-leg.svg",
         location: "Lagos Nigeria",
@@ -12,7 +12,7 @@ const restaurants = [
     {
         id: 2,
         name: "SCP Furniture",
-        rating: 5.0,
+        rating: "5.0",
         meal1: "assets/svg/pizza-slice.svg",
         meal2: "assets/svg/burger.svg",
         location: "Lagos Nigeria",
@@ -21,7 +21,7 @@ const restaurants = [
     {
         id: 3,
         name: "Bar Boloud",
-        rating: 3.0,
+        rating: "3.0",
         meal1: "assets/svg/chicken-leg.svg",
         meal2: "assets/svg/pizza-slice.svg",
         location: "Lagos Nigeria",
@@ -29,14 +29,17 @@ const restaurants = [
     },
     {
         id: 4,
-        name: "Portobello Pizza",
-        rating: 4.0,
+        name: "Melvines Kitchen",
+        rating: "4.0",
         meal1: "assets/svg/burger.svg",
         meal2: "assets/svg/chicken-leg.svg",
         location: "Lagos Nigeria",
         background: "assets/img/chair-cutlery-diner-941861.jpg"
     },
+    
 ]
+
+console.log(restaurants[0].rating);
 
 
 class Featured {
@@ -51,6 +54,7 @@ class Featured {
     createFeature(restaurant) {
         this.singleFeature = document.createElement('div');
         this.singleFeature.setAttribute('class', 'feature');
+        this.singleFeature.setAttribute('data-aos', 'zoom-in-right');
 
         this.modifyFeature(restaurant, this.singleFeature);
     }
@@ -113,7 +117,6 @@ class Featured {
         this.featureInfo.appendChild(this.featureMeal);
 
         this.featuresBlock.appendChild(newElement);
-        console.log(newElement);
     }
 }
 
