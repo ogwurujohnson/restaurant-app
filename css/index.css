@@ -429,6 +429,85 @@ body {
     width: 20%;
   }
 }
+@media (min-width: 750px) {
+  .search-section {
+    margin-top: 0;
+  }
+  .search-section .header-images {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .search-section .header-images .find-illustrative-image {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 400px;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+  .search-section .header-images .find-illustrative-image img {
+    width: 50%;
+    padding-right: 3rem;
+    padding-top: 0;
+    flex: 1;
+  }
+  .search-section .header-images .find-illustrative-image .auxilliary {
+    display: block;
+    flex: 0;
+    width: 25%;
+    margin-top: 3rem;
+    padding: 0;
+  }
+  .search-section .header-images .arrow {
+    display: block;
+    width: 5%;
+  }
+  .search-section .header-images .result-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+  .search-section .header-images .result-images img {
+    width: 30%;
+    height: 100%;
+    padding-right: 3rem;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .search-section .header-close-image {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
+  .search-section .header-close-image img {
+    width: 100%;
+  }
+  .search-section .intro-note {
+    margin: 3rem auto;
+  }
+  .search-section .searchpane {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+  .search-section .searchpane input {
+    width: 62%;
+    margin-left: 2rem;
+    text-align: left;
+    padding: 1rem;
+  }
+  .search-section .searchpane button {
+    padding: 1rem;
+    width: 30%;
+  }
+}
 .interests {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
