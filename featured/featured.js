@@ -99,6 +99,16 @@ class Featured {
         this.restAddress.innerText = restaurantData.location;
         this.restAddress.setAttribute('class', 'restaurant-name');
 
+        this.featureRestInfo.appendChild(this.featureRating);
+        this.featureRestInfo.appendChild(this.restAddress);
+
+        this.foodimage1 = document.createElement('img');
+        this.foodimage2 = document.createElement('img');
+        this.foodimage1.setAttribute('src', restaurantData.meal1);
+        this.foodimage2.setAttribute('src', restaurantData.meal2);
+        this.featureImage.appendChild(this.foodimage1);
+        this.featureImage.appendChild(this.foodimage2);
+
         
 
         console.log(newElement);
