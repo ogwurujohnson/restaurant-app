@@ -66,8 +66,13 @@ class Featured {
         this.featureInfo.setAttribute('class', 'info');
 
         this.featureRestInfo = document.createElement('div');
+        this.featureRestInfo.setAttribute('class', 'rest-info');
+
         this.featureRating = document.createElement('div');
+        this.featureRating.setAttribute('class', 'rating');
+
         this.featureMeal = document.createElement('div');
+        this.featureMeal.setAttribute('class', 'meal');
 
         //append div blocks to dom
         newElement.appendChild(this.featureImage);
@@ -86,7 +91,7 @@ class Featured {
         this.name.innerText = restaurantData.name;
         this.featureName.appendChild(this.name);
 
-        
+        this
 
         console.log(newElement);
     }
