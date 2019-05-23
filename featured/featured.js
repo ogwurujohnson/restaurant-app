@@ -91,7 +91,11 @@ class Featured {
         this.name.innerText = restaurantData.name;
         this.featureName.appendChild(this.name);
 
-        this
+        this.restRate = document.createElement('p');
+        this.restRate.innerText = restaurantData.rating;
+        this.featureRating.appendChild(this.restRate);
+
+
 
         console.log(newElement);
     }
