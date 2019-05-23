@@ -16,7 +16,7 @@ const restaurants = [
         meal1: "assets/svg/pizza-slice.svg",
         meal2: "assets/svg/burger.svg",
         location: "Lagos Nigeria",
-        background: "assets/img/blur-chef-close-up-262978.jpg.jpg"
+        background: "assets/img/blur-chef-close-up-262978.jpg"
     },
     {
         id: 3,
@@ -106,12 +106,13 @@ class Featured {
         this.foodimage2 = document.createElement('img');
         this.foodimage1.setAttribute('src', restaurantData.meal1);
         this.foodimage2.setAttribute('src', restaurantData.meal2);
-        this.featureImage.appendChild(this.foodimage1);
-        this.featureImage.appendChild(this.foodimage2);
+        this.featureMeal.appendChild(this.foodimage1);
+        this.featureMeal.appendChild(this.foodimage2);
 
         this.featureInfo.appendChild(this.featureRestInfo);
         this.featureInfo.appendChild(this.featureMeal);
 
+        this.featuresBlock.appendChild(newElement);
         console.log(newElement);
     }
 }
