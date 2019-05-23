@@ -95,7 +95,11 @@ class Featured {
         this.restRate.innerText = restaurantData.rating;
         this.featureRating.appendChild(this.restRate);
 
+        this.restAddress = document.createElement('p');
+        this.restAddress.innerText = restaurantData.location;
+        this.restAddress.setAttribute('class', 'restaurant-name');
 
+        
 
         console.log(newElement);
     }
