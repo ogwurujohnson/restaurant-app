@@ -1,3 +1,5 @@
+// Style about section
+// Style approach - Mobile first
 .about-us {
   .flex-mixin(column);
   margin-top: @large-margin;
@@ -19,11 +21,13 @@
     .flex-mixin(column);
     justify-content: space-between;
     .team-intro {
+      order: 2;
       margin-top: 5.0rem;
       width: 100%;
       padding: 2.0rem;
     }
     .team-images {
+      order: 1;
       margin-top: 3.0rem;
       img {
         width: 100%;
@@ -32,6 +36,13 @@
     }
   }
 
+  // tablet screen styling for the about section
+  @media @tablet {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  // desktop styling for the about section
   @media @desktop {
     .intro {
       margin-top: 2rem;
@@ -41,11 +52,13 @@
       .flex-mixin(row);
       justify-content: space-between;
       .team-intro {
+        order: 1;
         margin-top: 5.0rem;
         width: 50%;
         padding: 2.0rem;
       }
       .team-images {
+        order: 2;
         margin-top: 3.0rem;
         img {
           width: 100%;

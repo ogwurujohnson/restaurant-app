@@ -1,6 +1,11 @@
+// Style approach - Mobile first
 .main-header {
     position: fixed;
     width: 100%;
+    .logo {
+        font-family: 'Baloo Bhai', cursive;
+        letter-spacing: 2;
+    }
     .nav-links {
         display: none;
     }
@@ -14,6 +19,37 @@
         font-size: @medium-font;
     }
 
+    // tablet styling for the main header
+    @media @tablet {
+        .sidemenu-bar {
+            display: none;
+        }
+
+        .logo {
+            align-self: baseline;
+        }
+        .nav-links {
+            display: block;
+            margin-left: 3.0rem;
+            a {
+                
+                text-decoration: none;
+                color: white;
+                padding-right: 3.0rem;
+                font-size: 1.5rem;
+                align-self: baseline;
+
+                i {
+                    padding: 0 .5rem;
+                    font-size: 1.5rem;
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+
+    // desktop styling for the main header
     @media @desktop {
         .sidemenu-bar {
             display: none;
@@ -41,6 +77,8 @@
             }
         }
     }
+
+    
 
 
 }
@@ -83,15 +121,24 @@
         color: white;
     }
 
+
+    // tablet screen style for side bar
+    @media @tablet {
+        display: none;
+    }
+
+    // desktop screen style for side bar
     @media @desktop {
         display: none;
     }
+
+    
 }
 
 
 .active,
 .link:hover  {
     border: 3px solid white;
-    padding: 1.0rem;
+    padding: 1.3rem;
     width: 90%;
 }

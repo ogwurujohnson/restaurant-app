@@ -10,9 +10,11 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 
     <!-- aos library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- gsap librabry -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -23,12 +25,15 @@
     <link rel="stylesheet/less" type="text/css" href="less/index.less" />
 
     <link rel="stylesheet" href="css/index.css">
-    <title>RestaurantX</title>
+
+
+    <title>Restaurant Passport</title>
 </head>
 
 <body>
+    <!-- Main Header section -->
     <header class="main-header">
-        <p class="logo">RestaurantX</p>
+        <p class="logo">Restaurant Passport</p>
         <span><i class="fas fa-bars sidemenu-bar"></i></i></span>
 
         <div class="nav-links">
@@ -36,8 +41,12 @@
             <a href="#" class="link">SignIn<i class="fas fa-user-circle"></i></a>
         </div>
     </header>
+    <!-- End Main header section -->
 
+    <!-- Main Container Section -->
     <main class="container">
+
+        <!-- Search section -->
         <section class="search-section">
 
             <div class="header-images">
@@ -55,10 +64,6 @@
                     <img src="assets/svg/love-in-air.svg" alt="find a place" class="auxilliary">
                 </div>
             </div>
-            <!-- <div class="header-close-image">
-                <img src="assets/svg/Rose-Petals.svg" alt="">
-            </div> -->
-
 
 
             <div class="intro-note">
@@ -66,11 +71,12 @@
             </div>
             <div class="searchpane">
                 <input type="text" placeholder="Enter Location?">
-                <button><i class="fas fa-search">&nbsp;&nbsp;Search</i></button>
+                <button><i class="fas fa-search">&nbsp;&nbsp;</i><i>Search</i></button>
             </div>
-
         </section>
+        <!-- End Search section -->
 
+        <!-- intrests section -->
         <section class="interests">
             <div class="intro-note">
                 <h1>What are you interested in?</h1>
@@ -104,95 +110,21 @@
                 </div>
             </div>
         </section>
+        <!-- end intereset section -->
 
+        <!-- Feature Section -->
         <section class="feature-section">
             <header>
                 <h1>Featured Restaurants</h1>
+                <p>Take a peek at the top Restaurants of the week</p>
             </header>
-            <div class="features" data-aos="zoom-in-right">
-                <div class="feature">
-                    <div class="img">
-                        <img src="assets/img/architecture-ceiling-chairs-262047.jpg" alt="Adventure">
-                    </div>
-                    <div class="writeup">
-                        <p>Portobello Pizza</p>
-                    </div>
-                    <div class="info">
-                        <div class="rest-info">
-                            <div class="rating">
-                                <p>4.0</p>
-                            </div>
-                            <p class="restaurant-name">Lagos, Nigeria</p>
-                        </div>
-                        <div class="meal">
-                            <img src="assets/svg/burger.svg" alt="">
-                            <img src="assets/svg/chicken-leg.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="assets/img/blur-chef-close-up-262978.jpg" alt="Adventure">
-                    </div>
-                    <div class="writeup">
-                        <p>SCP Furniture</p>
-                    </div>
-                    <div class="info">
-                        <div class="rest-info">
-                            <div class="rating">
-                                <p>4.0</p>
-                            </div>
-                            <p class="restaurant-name">Lagos, Nigeria</p>
-                        </div>
-                        <div class="meal">
-                            <img src="assets/svg/pizza-slice.svg" alt="">
-                            <img src="assets/svg/burger.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="assets/img/chair-cutlery-diner-941861.jpg" alt="Adventure">
-                    </div>
-                    <div class="writeup">
-                        <p>Bar Boloud</p>
-                    </div>
-                    <div class="info">
-                        <div class="rest-info">
-                            <div class="rating">
-                                <p>4.0</p>
-                            </div>
-                            <p class="restaurant-name">Lagos, Nigeria</p>
-                        </div>
-                        <div class="meal">
-                            <img src="assets/svg/chicken-leg.svg" alt="">
-                            <img src="assets/svg/pizza-slice.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="img">
-                        <img src="assets/img/chair-cutlery-diner-941861.jpg" alt="Adventure">
-                    </div>
-                    <div class="writeup">
-                        <p>Bar Boloud</p>
-                    </div>
-                    <div class="info">
-                        <div class="rest-info">
-                            <div class="rating">
-                                <p>4.0</p>
-                            </div>
-                            <p class="restaurant-name">Lagos, Nigeria</p>
-                        </div>
-                        <div class="meal">
-                            <img src="assets/svg/chicken-leg.svg" alt="">
-                            <img src="assets/svg/pizza-slice.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="features">
+                <!-- JavaScript Injects code dynamically here -->
             </div>
         </section>
+        <!-- End feature section -->
 
+        <!-- How to Section -->
         <section class="how-to">
             <div class="intro">
                 <h1>See How it Works</h1>
@@ -200,50 +132,39 @@
             </div>
 
             <div class="how-to-grid">
-                <div class="step">
-                    <div class="img">
-                        <img src="assets/svg/choose.svg" alt="Adventure">
-                    </div>
-                    <h2>Choose Area</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="step">
-                    <div class="img">
-                        <img src="assets/svg/booking.svg" alt="Adventure">
-                    </div>
-                    <h2>Select A Restaurant</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="step">
-                    <div class="img">
-                        <img src="assets/svg/welcoming_chef.svg" alt="Adventure">
-                    </div>
-                    <h2>Arrive at Restaurant</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
+                <!-- Javascript Injedts code dynamically here -->
             </div>
         </section>
-        <section class="about-us" id="about">
+        <!-- End How to Section -->
+
+        <!-- About Section -->
+        <section class="about-us" id="about" data-aos="zoom-in-left">
             <div class="intro">
                 <h1>Get to Know the Team</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Restaurant Passport is designed to be your one-stop destination for anything you can think of that
+                    is about or related to restaurants.
+                </p>
             </div>
 
             <div class="team">
                 <div class="team-intro">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
-                        dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.printing and typesetting industry.Lorem Ipsum is simply dummy text
-                        of the printing and typesetting industry.</p>
+                    <p>At Restaurant Passport, we believe everyone deserves to have the power to choose where they go to
+                        eat and have their "me time". Innovation and
+                        simplicity makes us happy: our goal is to remove barriers of locating restaurants and keep track
+                        of visited ones, which can prevent individuals from visiting
+                        and trying out new spots. We know that the Internet is an overwhelming space and finding just
+                        the information you need can still be a frustrating and time-consuming process. We're excited to
+                        help!</p>
                 </div>
                 <div class="team-images">
                     <img src="assets/svg/team.svg" alt="">
                 </div>
             </div>
-
         </section>
+        <!-- End About section -->
+
     </main>
+    <!-- End Main container Section -->
 
     <div class="side-bar">
         <nav class="nav-menu">
@@ -284,7 +205,7 @@
 
 
     <!-- aos script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
@@ -293,7 +214,10 @@
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
     <!-- native script codes -->
-    <script defer src="sidebar/sidebar.js"></script>
+    <script defer src="components/sidebar/sidebar.js"></script>
+    <script defer src="components/featured/featured.js"></script>
+    <script defer src="components/howto-section/howto.js"></script>
+    <script defer src="components/search-section/search-section.js"></script>
 </body>
 
 </html>

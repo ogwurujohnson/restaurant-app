@@ -1,10 +1,22 @@
 // sidebar class
 
+/**
+ *
+ *
+ * @class SideBar
+ */
 class SideBar {
+
+  /**
+   *Creates an instance of SideBar.
+   * @param {*} menu
+   * @memberof SideBar
+   */
   constructor(menu) {
     this.menu = menu;
     this.logo = document.querySelector(".logo");
     this.mainHeader = document.querySelector(".main-header");
+    this.navLinks = document.querySelectorAll(".link");
 
     window.addEventListener('load', () => {
       TweenMax.from(this.logo, 1, { ease: Circ.easeIn, x: -200  });
@@ -22,34 +34,44 @@ class SideBar {
     this.isOpen = false;
   }
 
+
+  /**
+   *
+   *
+   * @memberof SideBar
+   */
   toggleMenu() {
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
-      TweenMax.to(this.sideMenu, 1, {
-        width: "100%",
-        onComplete: () => {
-          this.sideMenuIcon.style.color = "white";
-          this.sideMenuIcon.classList.replace("fa-bars", "fa-times");
-          this.logo.style.color = "white";
-          this.mainHeader.style.backgroundColor = "black";
-        }, opacity: 100
-      });
+      let timeline = new TimelineMax();
+      timeline.timeScale(4);
+      timeline.to(this.sideMenu, .5, {width: "100%", opacity: 100});
+      this.sideMenuIcon.classList.replace("fa-bars", "fa-times");
+      this.mainHeader.style.backgroundColor = "black";
+      
     } else {
-      TweenMax.to(this.sideMenu, 1, {
-        width: "0%",
-        onComplete: () => {
-          this.sideMenuIcon.style.color = "white";
-          this.sideMenuIcon.classList.replace("fa-times", "fa-bars");
-          this.logo.style.color = "white";
-          this.mainHeader.style.backgroundColor = "#6200EE";
-        }, opacity: 0
-      });
+      let timeline = new TimelineMax();
+      timeline.timeScale(6);
+      timeline.to(this.sideMenu, .5, {width: "0%", opacity: 0});
+      this.sideMenuIcon.classList.replace("fa-times", "fa-bars");
+      this.mainHeader.style.backgroundColor = "#6200EE";
     }
   }
 }
 
 
+/**
+ *
+ *
+ * @class StyleNav
+ */
 class StyleNav {
+
+  /**
+   *Creates an instance of StyleNav.
+   * @param {*} element
+   * @memberof StyleNav
+   */
   constructor(element) {
     this.nav = element;
 
@@ -61,6 +83,13 @@ class StyleNav {
     
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   add(nav) {
     this.allNav = document.querySelectorAll('.link');
     this.allNav.forEach(aNav => {
@@ -69,12 +98,26 @@ class StyleNav {
     nav.classList.add('active');
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   remove(nav) {
     nav.classList.remove('active');
-    nav.style.background = "#6200EE";
+    nav.style.background = "transparent";
     nav.style.color = "white";
   }
 
+
+  /**
+   *
+   *
+   * @param {*} nav
+   * @memberof StyleNav
+   */
   selectHover(nav) {
     nav.classList.add('active');
   }

@@ -1,5 +1,6 @@
+// Style approach - Mobile first
 .interests {
-  margin-top: @medium-margin;
+  margin-top: @small-margin;
   margin-bottom: @large-margin;
   position: relative;
   height: 650px;
@@ -46,6 +47,40 @@
     }
   }
 
+  // styling for tablet screen
+  @media @tablet {
+    height: 750px;
+
+    .interest-grid {
+      .interest {
+        width: 35%;
+
+
+        .img {
+          width: 70%;
+          margin: 2.0rem;
+
+          img {
+            width: 100%;
+            margin: 2.0rem auto;
+          }
+        }
+
+        p {
+          font-size: 2.0rem;
+          padding: 2.0rem;
+          padding-top: 1.0rem;
+        }
+        
+        &:nth-child(1n) {
+          margin-right: 3.0rem;
+          margin-bottom: 3.0rem;
+        }
+      }
+    }
+  }
+
+  // styling for desktop screen
   @media @desktop {
     height: 750px;
 
@@ -68,11 +103,13 @@
           font-size: 2.0rem;
           padding: 2.0rem;
         }
+        &:nth-child(1n) {
+          margin-right: 3.0rem;
+          margin-bottom: 3.0rem;
+        }
       }
     }
   }
 
-  // @media @large-desktop {
-  //   height: 2200px;
-  // }
+  
 }

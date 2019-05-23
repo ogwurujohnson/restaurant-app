@@ -1,3 +1,4 @@
+// Style approach - Mobile first
 .how-to {
   .flex-mixin(column);
   margin-top: @large-margin;
@@ -55,6 +56,35 @@
     }
   }
 
+  // table screen responsiveness
+  @media @tablet {
+    .intro {
+      margin-top: 2.0rem;
+    }
+
+    .how-to-grid {
+      .flex-mixin(row);
+      flex-wrap: wrap;
+      margin-top: 3.0rem;
+
+      .step {
+        padding: 1.5rem;
+        width: 30%;
+        padding: .2rem;
+        margin-bottom: 2.0rem;
+
+        .img {
+          margin-top: 2.0rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // desktop screen styling for how to section
   @media @desktop {
     .intro {
       margin-top: 2.0rem;
@@ -71,4 +101,6 @@
       }
     }
   }
+
+  
 }

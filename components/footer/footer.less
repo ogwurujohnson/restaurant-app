@@ -1,10 +1,11 @@
+// Style approach - Mobile first
 .footer-section {
     flex-shrink: 0;
     padding-top: 3.0rem;
     
     .social-section {
         .flex-mixin(row);
-        margin: 3.0rem auto;
+        margin: 2.0rem auto;
         width: 80%;
         .social {
             border: 2px solid #6200EE;
@@ -25,7 +26,6 @@
         h1 {
             text-align: center;
             font-size: 2.0rem;
-            padding-top: 3.0rem;
             color: white;
         }
 
@@ -35,13 +35,62 @@
         
         .stores {
             .flex-mixin(row);
-            justify-content: space-evenly;
+            justify-content: center;
+
+            height: 2%;
             img {
                 width: 20%;
+            }
+            .store {
+                height: 2%;
+                width: 10%;
+                margin: 0 2.0rem;
+                padding-bottom: 1.5rem;
             }
         }
     }
 
+    // style tablet view of footewr section
+    @media @tablet {
+        .social-section {
+            width: 35%;
+
+            .social {
+                width: 70%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .get-app {
+            .flex-mixin(row);
+            justify-content: space-evenly;
+            padding-top: 3.0rem;
+            .arrow {
+                display: block;
+                width: 3%;
+                height: 2%;
+                margin-left: 0;
+                margin-top: 3.0rem;
+                color: white;
+            }
+            .stores {
+                margin: 3.0rem;
+                align-self: flex-end;
+                height: 1%;
+                justify-content: center;
+                .store {
+                    height: 1%;
+                    width: 10%;
+                    margin: 0 2.0rem;
+                }
+            }
+        }
+    }
+
+    // desktop screen styling for footer section
     @media @desktop {
         .social-section {
             width: 25%;
@@ -58,6 +107,7 @@
         .get-app {
             .flex-mixin(row);
             justify-content: space-evenly;
+            padding-top: 3.0rem;
             .arrow {
                 display: block;
                 width: 3%;
@@ -69,14 +119,16 @@
             .stores {
                 margin: 3.0rem;
                 align-self: flex-end;
-                height: 2%;
+                height: 1%;
                 justify-content: center;
                 .store {
-                    height: 2%;
+                    height: 1%;
                     width: 10%;
                     margin: 0 2.0rem;
                 }
             }
         }
     }
+
+    
 }
