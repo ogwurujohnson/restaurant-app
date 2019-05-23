@@ -109,7 +109,8 @@ class Featured {
         this.featureImage.appendChild(this.foodimage1);
         this.featureImage.appendChild(this.foodimage2);
 
-        
+        this.featureInfo.appendChild(this.featureRestInfo);
+        this.featureInfo.appendChild(this.featureMeal);
 
         console.log(newElement);
     }
