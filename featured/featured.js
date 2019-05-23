@@ -39,7 +39,6 @@ const restaurants = [
     
 ]
 
-console.log(restaurants[0].rating);
 
 
 class Featured {
