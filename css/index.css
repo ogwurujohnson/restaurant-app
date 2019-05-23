@@ -577,6 +577,31 @@ body {
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 750px) {
+  .interests {
+    height: 750px;
+  }
+  .interests .interest-grid .interest {
+    width: 35%;
+  }
+  .interests .interest-grid .interest .img {
+    width: 70%;
+    margin: 2rem;
+  }
+  .interests .interest-grid .interest .img img {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .interests .interest-grid .interest p {
+    font-size: 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
+  }
+  .interests .interest-grid .interest:nth-child(1n) {
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+  }
+}
 .feature-section {
   position: relative;
   margin: 10rem 2rem;
