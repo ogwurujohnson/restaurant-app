@@ -26,7 +26,6 @@
         h1 {
             text-align: center;
             font-size: 2.0rem;
-            padding: 1.0rem auto;
             color: white;
         }
 
@@ -58,6 +57,46 @@
 
             .social {
                 width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .get-app {
+            .flex-mixin(row);
+            justify-content: space-evenly;
+            padding-top: 3.0rem;
+            .arrow {
+                display: block;
+                width: 3%;
+                height: 2%;
+                margin-left: 0;
+                margin-top: 3.0rem;
+                color: white;
+            }
+            .stores {
+                margin: 3.0rem;
+                align-self: flex-end;
+                height: 1%;
+                justify-content: center;
+                .store {
+                    height: 1%;
+                    width: 10%;
+                    margin: 0 2.0rem;
+                }
+            }
+        }
+    }
+
+    // style tablet view of footewr section
+    @media @tablet {
+        .social-section {
+            width: 35%;
+
+            .social {
+                width: 70%;
 
                 img {
                     width: 100%;
