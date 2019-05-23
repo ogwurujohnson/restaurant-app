@@ -264,10 +264,11 @@ body {
 .search-section {
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 12rem;
+  margin-bottom: 15rem;
 }
 .search-section .intro-note {
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 .search-section .intro-note h1 {
   font-size: 3.2rem;
@@ -293,7 +294,8 @@ body {
   display: none;
 }
 .search-section .searchpane {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 .search-section .searchpane input {
@@ -395,7 +397,7 @@ body {
   }
 }
 .interests {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
   position: relative;
   height: 650px;
