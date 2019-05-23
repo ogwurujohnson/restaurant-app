@@ -30,7 +30,16 @@ https://restaurantx.netlify.com
 * [JavaScript](https://maven.apache.org/) - Dependency Management
 * [FlexBox](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
+## Screenshots
 
+# Desktop Mode
+<img width="1440" alt="Screenshot 2019-05-23 at 2 42 23 PM" src="https://user-images.githubusercontent.com/14821816/58257541-0165d600-7d69-11e9-9d92-535c2c4092d1.png">
+
+# Tablet Screen
+<img width="385" alt="Screenshot 2019-05-23 at 2 37 42 PM" src="https://user-images.githubusercontent.com/14821816/58257311-9a482180-7d68-11e9-9d8e-b35ff816a247.png">
+
+# Mobile Mode
+<img width="362" alt="Screenshot 2019-05-23 at 2 41 25 PM" src="https://user-images.githubusercontent.com/14821816/58257477-e5facb00-7d68-11e9-82f2-e03b0be438a6.png">
 
 ## Authors
 
