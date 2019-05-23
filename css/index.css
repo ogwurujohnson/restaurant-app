@@ -439,6 +439,9 @@ body {
   color: grey;
   display: block;
 }
+.interests .interest-grid .interest:nth-child(1n) {
+  margin-right: 3rem;
+}
 @media (min-width: 1024px) {
   .interests {
     height: 750px;
