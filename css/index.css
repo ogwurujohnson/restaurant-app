@@ -533,6 +533,7 @@ body {
   margin: 3rem 2rem;
 }
 .interests .interest-grid .interest {
+  transition: transform 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,6 +553,9 @@ body {
 .interests .interest-grid .interest p {
   color: grey;
   display: block;
+}
+.interests .interest-grid .interest:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 750px) {
   .interests {
@@ -620,6 +624,7 @@ body {
   flex-direction: column;
 }
 .feature-section .features .feature {
+  transition: transform 0.5s;
   box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
   display: flex;
   flex-direction: column;
@@ -686,6 +691,9 @@ body {
   border: 2px solid #5e60e1;
   border-radius: 50%;
   padding: 1rem;
+}
+.feature-section .features .feature:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 750px) {
   .feature-section {
@@ -784,6 +792,7 @@ body {
     margin-top: 3rem;
   }
   .how-to .how-to-grid .step {
+    transition: transform 0.5s;
     padding: 1.5rem;
     width: 30%;
     padding: 0.2rem;
@@ -794,6 +803,9 @@ body {
   }
   .how-to .how-to-grid .step p {
     font-size: 1.2rem;
+  }
+  .how-to .how-to-grid .step:hover {
+    transform: scale(1.05);
   }
 }
 @media (min-width: 1024px) {
@@ -889,6 +901,7 @@ body {
   width: 80%;
 }
 .footer-section .social-section .social {
+  transition: transform 0.3s;
   border: 2px solid #6200EE;
   border-radius: 50%;
   margin: 0.5rem;
@@ -899,6 +912,10 @@ body {
   width: 100%;
   padding: 2rem;
 }
+.footer-section .social-section .social:hover {
+  transform: scale(1.2);
+  background-color: #6200EE;
+}
 .footer-section .get-app {
   background-color: #6200EE;
 }
@@ -908,7 +925,11 @@ body {
   color: white;
 }
 .footer-section .get-app .arrow {
+  transition: transform 0.5s;
   display: none;
+}
+.footer-section .get-app .arrow:hover {
+  transform: scaleX(1.3);
 }
 .footer-section .get-app .stores {
   display: flex;
