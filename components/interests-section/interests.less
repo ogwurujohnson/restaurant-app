@@ -25,6 +25,7 @@
     justify-content: center;
     margin: 3.0rem 2.0rem;
     .interest {
+      transition: transform .5s;
       .flex-mixin(column);
       align-items: center;
       width: 40%;
@@ -43,6 +44,9 @@
       p {
         color: grey;
         display: block;
+      }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }

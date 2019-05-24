@@ -49,7 +49,6 @@ class HowTo {
     createCard(stage) {
         this.stepCard = document.createElement('div');
         this.stepCard.setAttribute('class', 'step');
-        this.stepCard.setAttribute('data-aos', 'zoom-in-left');
 
         this.modifyCard(stage, this.stepCard);
     }

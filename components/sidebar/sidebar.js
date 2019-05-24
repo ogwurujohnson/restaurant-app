@@ -18,9 +18,7 @@ class SideBar {
     this.mainHeader = document.querySelector(".main-header");
     this.navLinks = document.querySelectorAll(".link");
 
-    window.addEventListener('load', () => {
-      TweenMax.from(this.logo, 1, { ease: Circ.easeIn, x: -200  });
-    });
+    
 
     this.sideMenu = document.querySelector(".side-bar");
     this.sideMenuIcon = document.querySelector(".sidemenu-bar");

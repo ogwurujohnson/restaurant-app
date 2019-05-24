@@ -68,6 +68,7 @@
       margin-top: 3.0rem;
 
       .step {
+        transition: transform .5s;
         padding: 1.5rem;
         width: 30%;
         padding: .2rem;
@@ -79,6 +80,10 @@
 
         p {
           font-size: 1.2rem;
+        }
+
+        &:hover {
+          transform: scale(1.05);
         }
       }
     }

@@ -69,7 +69,6 @@ class Featured {
     createFeature(restaurant) {
         this.singleFeature = document.createElement('div');
         this.singleFeature.setAttribute('class', 'feature');
-        this.singleFeature.setAttribute('data-aos', 'zoom-in-right');
 
         this.modifyFeature(restaurant, this.singleFeature);
     }

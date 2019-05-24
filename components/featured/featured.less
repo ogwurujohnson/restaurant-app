@@ -18,6 +18,7 @@
   .features {
     .flex-mixin(column);
     .feature {
+      transition: transform .5s;
       box-shadow: 0 4px 8px 0 #111, 0 6px 20px 0 #fff;
       .flex-mixin(column);
       background-color: white;
@@ -86,6 +87,9 @@
             padding: 1rem;
           }
         }
+      }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }

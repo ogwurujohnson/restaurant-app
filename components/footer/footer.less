@@ -8,6 +8,7 @@
         margin: 2.0rem auto;
         width: 80%;
         .social {
+            transition: transform .3s;
             border: 2px solid #6200EE;
             border-radius: 50%;
             margin: .5rem;
@@ -16,6 +17,10 @@
             img {
                 width: 100%;
                 padding: 2.0rem;
+            }
+            &:hover {
+                transform: scale(1.2);
+                background-color: #6200EE;
             }
         }
     }
@@ -30,7 +35,11 @@
         }
 
         .arrow {
+            transition: transform .5s;
             display: none;
+            &:hover {
+                transform: scaleX(1.3);
+            }
         }
         
         .stores {
