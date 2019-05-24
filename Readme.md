@@ -26,9 +26,9 @@ https://restaurantx.netlify.com
 
 ## Built With
 
-* [Less](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [JavaScript](https://maven.apache.org/) - Dependency Management
-* [FlexBox](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Less](#) - A CSS preprocessor 
+* [JavaScript](#) - Language of the web and beyond
+* [Flexbox](#) - CSS layout property
 
 ## Screenshots
 
